@@ -46,7 +46,7 @@ lineSettings = kc.getSettings()
 Cmid = kc.getProfile().mid
 responsename4 = kc.getProfile().displayName
 
-km = LineClient("syahbardian2@gmail.com","sbardian71993")
+km = LineClient("sbardian7@gmail.com","sbardian71993")
 km.log("Auth Token : " + str(km.authToken))
 channel4 = LineChannel(km)
 km.log("Channel Access Token : " + str(channel4.channelAccessToken))
@@ -64,7 +64,7 @@ lineSettings = kb.getSettings()
 Emid = kb.getProfile().mid
 responsename6 = kb.getProfile().displayName
 
-ki = LineClient("bardiansyah101@gmail.com","sbardian71993")
+kn = LineClient("bardiansyah101@gmail.com","sbardian71993")
 kn.log("Auth Token : " + str(kn.authToken))
 channel6 = LineChannel(kn)
 kn.log("Channel Access Token : " + str(channel6.channelAccessToken))
