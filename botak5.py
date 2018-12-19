@@ -319,7 +319,7 @@ def command(text):
 def help():
     key = Setmain["keyCommand"]
     key = key.title()
-    helpMessage = "❧MENU HELP❧\n" + \
+    helpMessage = "❧Famz__Help❧\n" + \
                   "❧" + key + "Me\n" + \
                   "❧" + key + "Mid「@」\n" + \
                   "❧" + key + "Info「@」\n" + \
@@ -408,7 +408,7 @@ def help():
 def helpbot():
     key = Setmain["keyCommand"]
     key = key.title()
-    helpMessage1 = "❧HELP BOT❧\n" + \
+    helpMessage1 = "❧Famz__Botz❧\n" + \
                   "❧" + key + "Blc\n" + \
                   "❧" + key + "Ban:on\n" + \
                   "❧" + key + "Unban:on\n" + \
@@ -678,7 +678,7 @@ def bot(op):
                     if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
                         sw.acceptGroupInvitation(op.param1)
                         G = sw.getGroup(op.param1)
-                        G.preventedJoinByTicket = False
+                        G.preventedJoinByTicket = True
                         sw.updateGroup(G)
                         Ticket = sw.reissueGroupTicket(op.param1)
                         cl.acceptGroupInvitationByTicket(op.param1,Ticket)
@@ -1050,7 +1050,7 @@ def bot(op):
                         cctv['sidermem'][op.param1] += "\n~ " + Name
                         siderMembers(op.param1, [op.param2])
                         contact = cl.getContact(op.param2)
-                        image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
+                        #image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
                         cl.sendImageWithURL(op.param1, image)                        
                         
         if op.type == 55:
@@ -1765,12 +1765,12 @@ def bot(op):
                                 sw.sendMessage(msg.to,"Nama diganti jadi " + string + "")
 
 #===========BOT UPDATE============#
-                        elif cmd == "tagall" or text.lower() == '😆':
+                        elif cmd == "tagall" or text.lower() == 'ð':
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                group = cl.getGroup(msg.to)
                                nama = [contact.mid for contact in group.members]
-                               nm1, nm2, nm3, nm4,nm5,nm6,nm7, jml = [], [], [], [],[], [], [], len(nama)
+                               nm1, nm2, nm3, nm4,nm5,nm6,nm7,nm8,nm9,nm10,nm11,nm12,nm13,nm14,nm15, jml = [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], len(nama)
                                if jml <= 20:
                                    mentionMembers(msg.to, nama)
                                if jml > 20 and jml < 40:
@@ -1885,6 +1885,314 @@ def bot(op):
                                    for p in range (140, len(nama)-1):
                                        nm8 += [nama[p]]
                                    mentionMembers(msg.to, nm8)
+                               if jml > 160 and jml < 180:
+                                   for i in range (0, 19):
+                                       nm1 += [nama[i]]
+                                   mentionMembers(msg.to, nm1)
+                                   for j in range (20, 39):
+                                       nm2 += [nama[j]]
+                                   mentionMembers(msg.to, nm2)
+                                   for k in range (40, 59):
+                                       nm3 += [nama[k]]
+                                   mentionMembers(msg.to, nm3)
+                                   for l in range (60, 79):
+                                       nm4 += [nama[l]]
+                                   mentionMembers(msg.to, nm4)
+                                   for m in range (80, 99):
+                                       nm5 += [nama[m]]
+                                   mentionMembers(msg.to, nm5)
+                                   for n in range (100, 119):
+                                       nm6 += [nama[n]]
+                                   mentionMembers(msg.to, nm6)
+                                   for o in range (120, 139):
+                                       nm7 += [nama[o]]
+                                   mentionMembers(msg.to, nm7)
+                                   for p in range (150, 159):
+                                       nm8 += [nama[p]]
+                                   mentionMembers(msg.to, nm8)
+                                   for q in range (160, len(nama)-1):
+                                       nm8 += [nama[q]]                                       
+                                   mentionMembers(msg.to, nm9)
+                               if jml > 160 and jml < 180:
+                                   for i in range (0, 19):
+                                       nm1 += [nama[i]]
+                                   mentionMembers(msg.to, nm1)
+                                   for j in range (20, 39):
+                                       nm2 += [nama[j]]
+                                   mentionMembers(msg.to, nm2)
+                                   for k in range (40, 59):
+                                       nm3 += [nama[k]]
+                                   mentionMembers(msg.to, nm3)
+                                   for l in range (60, 79):
+                                       nm4 += [nama[l]]
+                                   mentionMembers(msg.to, nm4)
+                                   for m in range (80, 99):
+                                       nm5 += [nama[m]]
+                                   mentionMembers(msg.to, nm5)
+                                   for n in range (100, 119):
+                                       nm6 += [nama[n]]
+                                   mentionMembers(msg.to, nm6)
+                                   for o in range (120, 139):
+                                       nm7 += [nama[o]]
+                                   mentionMembers(msg.to, nm7)
+                                   for p in range (140, 159):
+                                       nm8 += [nama[p]]
+                                   mentionMembers(msg.to, nm8)
+                                   for q in range (160, 179):
+                                       nm9 += [nama[q]]
+                                   mentionMembers(msg.to, nm9)
+                                   for r in range (180, len(nama)-1):
+                                       nm10 += [nama[r]]
+                                   mentionMembers(msg.to, nm10)
+                               if jml > 180 and jml < 200:
+                                   for i in range (0, 19):
+                                       nm1 += [nama[i]]
+                                   mentionMembers(msg.to, nm1)
+                                   for j in range (20, 39):
+                                       nm2 += [nama[j]]
+                                   mentionMembers(msg.to, nm2)
+                                   for k in range (40, 59):
+                                       nm3 += [nama[k]]
+                                   mentionMembers(msg.to, nm3)
+                                   for l in range (60, 79):
+                                       nm4 += [nama[l]]
+                                   mentionMembers(msg.to, nm4)
+                                   for m in range (80, 99):
+                                       nm5 += [nama[m]]
+                                   mentionMembers(msg.to, nm5)
+                                   for n in range (100, 119):
+                                       nm6 += [nama[n]]
+                                   mentionMembers(msg.to, nm6)
+                                   for o in range (120, 139):
+                                       nm7 += [nama[o]]
+                                   mentionMembers(msg.to, nm7)
+                                   for p in range (140, 159):
+                                       nm8 += [nama[p]]
+                                   mentionMembers(msg.to, nm8)
+                                   for q in range (160, 179):
+                                       nm9 += [nama[q]]
+                                   mentionMembers(msg.to, nm9)
+                                   for r in range (180, 195):
+                                       nm10 += [nama[r]]
+                                   mentionMembers(msg.to, nm10)
+                                   for s in range (200, len(nama)-1):
+                                       nm11 += [nama[s]]
+                                   mentionMembers(msg.to, nm11)
+                               if jml > 200 and jml < 220:
+                                   for i in range (0, 19):
+                                       nm1 += [nama[i]]
+                                   mentionMembers(msg.to, nm1)
+                                   for j in range (20, 39):
+                                       nm2 += [nama[j]]
+                                   mentionMembers(msg.to, nm2)
+                                   for k in range (40, 59):
+                                       nm3 += [nama[k]]
+                                   mentionMembers(msg.to, nm3)
+                                   for l in range (60, 79):
+                                       nm4 += [nama[l]]
+                                   mentionMembers(msg.to, nm4)
+                                   for m in range (80, 99):
+                                       nm5 += [nama[m]]
+                                   mentionMembers(msg.to, nm5)
+                                   for n in range (100, 119):
+                                       nm6 += [nama[n]]
+                                   mentionMembers(msg.to, nm6)
+                                   for o in range (120, 139):
+                                       nm7 += [nama[o]]
+                                   mentionMembers(msg.to, nm7)
+                                   for p in range (140, 159):
+                                       nm8 += [nama[p]]
+                                   mentionMembers(msg.to, nm8)
+                                   for q in range (160, 179):
+                                       nm9 += [nama[q]]
+                                   mentionMembers(msg.to, nm9)
+                                   for r in range (180, 195):
+                                       nm10 += [nama[r]]
+                                   mentionMembers(msg.to, nm10)
+                                   for s in range (200, 219):
+                                       nm11 += [nama[s]]
+                                   mentionMembers(msg.to, nm11)
+                                   for t in range (220, len(nama)-1):
+                                       nm12 += [nama[t]]
+                                   mentionMembers(msg.to, nm12)
+                               if jml > 220 and jml < 239:
+                                   for i in range (0, 19):
+                                       nm1 += [nama[i]]
+                                   mentionMembers(msg.to, nm1)
+                                   for j in range (20, 39):
+                                       nm2 += [nama[j]]
+                                   mentionMembers(msg.to, nm2)
+                                   for k in range (40, 59):
+                                       nm3 += [nama[k]]
+                                   mentionMembers(msg.to, nm3)
+                                   for l in range (60, 79):
+                                       nm4 += [nama[l]]
+                                   mentionMembers(msg.to, nm4)
+                                   for m in range (80, 99):
+                                       nm5 += [nama[m]]
+                                   mentionMembers(msg.to, nm5)
+                                   for n in range (100, 119):
+                                       nm6 += [nama[n]]
+                                   mentionMembers(msg.to, nm6)
+                                   for o in range (120, 139):
+                                       nm7 += [nama[o]]
+                                   mentionMembers(msg.to, nm7)
+                                   for p in range (140, 159):
+                                       nm8 += [nama[p]]
+                                   mentionMembers(msg.to, nm8)
+                                   for q in range (160, 179):
+                                       nm9 += [nama[q]]
+                                   mentionMembers(msg.to, nm9)
+                                   for r in range (180, 195):
+                                       nm10 += [nama[r]]
+                                   mentionMembers(msg.to, nm10)
+                                   for s in range (200, 219):
+                                       nm11 += [nama[s]]
+                                   mentionMembers(msg.to, nm11)
+                                   for t in range (220, 239):
+                                       nm12 += [nama[t]]
+                                   mentionMembers(msg.to, nm12)
+                                   for u in range (240, len(nama)-1):
+                                       nm13 += [nama[u]]
+                                   mentionMembers(msg.to, nm13)
+                               if jml > 240 and jml < 259:
+                                   for i in range (0, 19):
+                                       nm1 += [nama[i]]
+                                   mentionMembers(msg.to, nm1)
+                                   for j in range (20, 39):
+                                       nm2 += [nama[j]]
+                                   mentionMembers(msg.to, nm2)
+                                   for k in range (40, 59):
+                                       nm3 += [nama[k]]
+                                   mentionMembers(msg.to, nm3)
+                                   for l in range (60, 79):
+                                       nm4 += [nama[l]]
+                                   mentionMembers(msg.to, nm4)
+                                   for m in range (80, 99):
+                                       nm5 += [nama[m]]
+                                   mentionMembers(msg.to, nm5)
+                                   for n in range (100, 119):
+                                       nm6 += [nama[n]]
+                                   mentionMembers(msg.to, nm6)
+                                   for o in range (120, 139):
+                                       nm7 += [nama[o]]
+                                   mentionMembers(msg.to, nm7)
+                                   for p in range (140, 159):
+                                       nm8 += [nama[p]]
+                                   mentionMembers(msg.to, nm8)
+                                   for q in range (160, 179):
+                                       nm9 += [nama[q]]
+                                   mentionMembers(msg.to, nm9)
+                                   for r in range (180, 195):
+                                       nm10 += [nama[r]]
+                                   mentionMembers(msg.to, nm10)
+                                   for s in range (200, 219):
+                                       nm11 += [nama[s]]
+                                   mentionMembers(msg.to, nm11)
+                                   for t in range (220, 239):
+                                       nm12 += [nama[t]]
+                                   mentionMembers(msg.to, nm12)
+                                   for u in range (240, 259):
+                                       nm13 += [nama[u]]
+                                   mentionMembers(msg.to, nm13)
+                                   for v in range (260, len(nama)-1):
+                                       nm14 += [nama[v]]
+                                   mentionMembers(msg.to, nm14)
+                               if jml > 260 and jml < 279:
+                                   for i in range (0, 19):
+                                       nm1 += [nama[i]]
+                                   mentionMembers(msg.to, nm1)
+                                   for j in range (20, 39):
+                                       nm2 += [nama[j]]
+                                   mentionMembers(msg.to, nm2)
+                                   for k in range (40, 59):
+                                       nm3 += [nama[k]]
+                                   mentionMembers(msg.to, nm3)
+                                   for l in range (60, 79):
+                                       nm4 += [nama[l]]
+                                   mentionMembers(msg.to, nm4)
+                                   for m in range (80, 99):
+                                       nm5 += [nama[m]]
+                                   mentionMembers(msg.to, nm5)
+                                   for n in range (100, 119):
+                                       nm6 += [nama[n]]
+                                   mentionMembers(msg.to, nm6)
+                                   for o in range (120, 139):
+                                       nm7 += [nama[o]]
+                                   mentionMembers(msg.to, nm7)
+                                   for p in range (140, 159):
+                                       nm8 += [nama[p]]
+                                   mentionMembers(msg.to, nm8)
+                                   for q in range (160, 179):
+                                       nm9 += [nama[q]]
+                                   mentionMembers(msg.to, nm9)
+                                   for r in range (180, 195):
+                                       nm10 += [nama[r]]
+                                   mentionMembers(msg.to, nm10)
+                                   for s in range (200, 219):
+                                       nm11 += [nama[s]]
+                                   mentionMembers(msg.to, nm11)
+                                   for t in range (220, 239):
+                                       nm12 += [nama[t]]
+                                   mentionMembers(msg.to, nm12)
+                                   for u in range (240, 259):
+                                       nm13 += [nama[u]]
+                                   mentionMembers(msg.to, nm13)
+                                   for v in range (260, 279):
+                                       nm14 += [nama[v]]
+                                   mentionMembers(msg.to, nm14)
+                                   for w in range (280, len(nama)-1):
+                                       nm15 += [nama[w]]
+                                   mentionMembers(msg.to, nm15)
+                               if jml > 280 and jml < 299:
+                                   for i in range (0, 19):
+                                       nm1 += [nama[i]]
+                                   mentionMembers(msg.to, nm1)
+                                   for j in range (20, 39):
+                                       nm2 += [nama[j]]
+                                   mentionMembers(msg.to, nm2)
+                                   for k in range (40, 59):
+                                       nm3 += [nama[k]]
+                                   mentionMembers(msg.to, nm3)
+                                   for l in range (60, 79):
+                                       nm4 += [nama[l]]
+                                   mentionMembers(msg.to, nm4)
+                                   for m in range (80, 99):
+                                       nm5 += [nama[m]]
+                                   mentionMembers(msg.to, nm5)
+                                   for n in range (100, 119):
+                                       nm6 += [nama[n]]
+                                   mentionMembers(msg.to, nm6)
+                                   for o in range (120, 139):
+                                       nm7 += [nama[o]]
+                                   mentionMembers(msg.to, nm7)
+                                   for p in range (140, 159):
+                                       nm8 += [nama[p]]
+                                   mentionMembers(msg.to, nm8)
+                                   for q in range (160, 179):
+                                       nm9 += [nama[q]]
+                                   mentionMembers(msg.to, nm9)
+                                   for r in range (180, 195):
+                                       nm10 += [nama[r]]
+                                   mentionMembers(msg.to, nm10)
+                                   for s in range (200, 219):
+                                       nm11 += [nama[s]]
+                                   mentionMembers(msg.to, nm11)
+                                   for t in range (220, 239):
+                                       nm12 += [nama[t]]
+                                   mentionMembers(msg.to, nm12)
+                                   for u in range (240, 259):
+                                       nm13 += [nama[u]]
+                                   mentionMembers(msg.to, nm13)
+                                   for v in range (260, 279):
+                                       nm14 += [nama[v]]
+                                   mentionMembers(msg.to, nm14)
+                                   for w in range (280, 299):
+                                       nm15 += [nama[w]]
+                                   mentionMembers(msg.to, nm15)
+                                   for x in range (300, len(nama)-1):
+                                       nm16 += [nama[x]]
+                                   mentionMembers(msg.to, nm16)
 
                         elif cmd == "listbot":
                           if wait["selfbot"] == True:
@@ -1895,7 +2203,7 @@ def bot(op):
                                     a = a + 1
                                     end = '\n'
                                     ma += str(a) + ". " +cl.getContact(m_id).displayName + "\n"
-                                cl.sendMessage(msg.to,"❧ĐPĶ  bot\n\n"+ma+"\nTotal「%s」 Bots" %(str(len(Bots))))
+                                cl.sendMessage(msg.to,"Famz_Botz\n\n"+ma+"\nTotal「%s」 Bots" %(str(len(Bots))))
 
                         elif cmd == "listadmin":
                           if wait["selfbot"] == True:
@@ -1918,7 +2226,7 @@ def bot(op):
                                     c = c + 1
                                     end = '\n'
                                     mc += str(c) + ". " +cl.getContact(m_id).displayName + "\n"
-                                cl.sendMessage(msg.to,"❧ĐPĶ  admin\n\nSuper admin:\n"+ma+"\nAdmin:\n"+mb+"\nStaff:\n"+mc+"\nTotal「%s」 Dpk" %(str(len(owner)+len(admin)+len(staff))))
+                                cl.sendMessage(msg.to,"âââââ¦Daftar__Adminâ§ââââº \n\nSuper admin:\n"+ma+"\nAdmin:\n"+mb+"\nStaff:\n"+mc+"\nTotalã%sã Anggota" %(str(len(owner)+len(admin)+len(staff))))
 
                         elif cmd == "listprotect":
                           if wait["selfbot"] == True:
@@ -1927,10 +2235,9 @@ def bot(op):
                                 mb = ""
                                 mc = ""
                                 md = ""
+                                me = ""
+                                mf = ""
                                 a = 0
-                                b = 0
-                                c = 0
-                                d = 0
                                 gid = protectqr
                                 for group in gid:
                                     a = a + 1
@@ -1938,27 +2245,30 @@ def bot(op):
                                     ma += str(a) + ". " +cl.getGroup(group).name + "\n"
                                 gid = protectkick
                                 for group in gid:
-                                    b = b + 1
+                                    a = a + 1
                                     end = '\n'
-                                    mb += str(b) + ". " +cl.getGroup(group).name + "\n"
+                                    mb += str(a) + ". " +cl.getGroup(group).name + "\n"
                                 gid = protectjoin
                                 for group in gid:
-                                    d = d + 1
+                                    a = a + 1
                                     end = '\n'
-                                    md += str(d) + ". " +cl.getGroup(group).name + "\n"
+                                    md += str(a) + ". " +cl.getGroup(group).name + "\n"
                                 gid = protectcancel
                                 for group in gid:
-                                    c = c + 1
+                                    a = a + 1
                                     end = '\n'
-                                    mc += str(c) + ". " +cl.getGroup(group).name + "\n"
-                                cl.sendMessage(msg.to,"❧ĐPĶ Fams Protection\n\n❧PROTECT URL :\n"+ma+"\n❧PROTECT KICK :\n"+mb+"\n❧PROTECT JOIN :\n"+md+"\n❧PROTECT CANCEL:\n"+mc+"\nTotal「%s」Grup yg dijaga" %(str(len(protectqr)+len(protectkick)+len(protectjoin)+len(protectcancel))))
-
-                        elif cmd == "respon":
-                          if wait["selfbot"] == True:
-                            if msg._from in admin:
-                                ki.sendMessage(msg.to,responsename1)
-                                kk.sendMessage(msg.to,responsename2)
-                                kc.sendMessage(msg.to,responsename3)
+                                    mc += str(a) + ". " +cl.getGroup(group).name + "\n"
+                                gid = protectinvite
+                                for group in gid:
+                                    a = a + 1
+                                    end = '\n'
+                                    me += str(a) + ". " +cl.getGroup(group).name + "\n"
+                                gid = protectantijs
+                                for group in gid:
+                                    a = a + 1
+                                    end = '\n'
+                                    mf += str(a) + ". " +cl.getGroup(group).name + "\n"
+                                cl.sendMessage(msg.to,"ãâââââ¦Famz_Protectionâ§ââââºã\n\nãâ­ã PROTECT URL :\n"+ma+"\nãâ­ã PROTECT KICK :\n"+mb+"\nãâ­ã PROTECT JOIN :\n"+md+"\nãâ­ã PROTECT CANCEL:\n"+mc+"\nãâ­ã PROTECT INVITE:\n"+me+"\nãâ­ã PROTECT ANTIJS :\n"+mf+"\nTotalã%sãGrup diamankan" %(str(len(protectqr)+len(protectkick)+len(protectjoin)+len(protectcancel)+len(protectinvite)+len(protectantijs))))
 
                         elif cmd == "invitebot":
                           if wait["selfbot"] == True:
@@ -2606,6 +2916,26 @@ def bot(op):
                                     else:
                                          msgs = "Protect kick sudah tidak aktif"
                                     cl.sendMessage(msg.to, "「Dinonaktifkan」\n" + msgs)
+                                    
+                        elif 'Protectinvite ' in msg.text:
+                           if msg._from in admin:
+                              spl = msg.text.replace('Protectinvite ','')
+                              if spl == 'on':
+                                  if msg.to in protectinvite:
+                                       msgs = "Protect invite sudah aktif"
+                                  else:
+                                       protectinvite.append(msg.to)
+                                       ginfo = cl.getGroup(msg.to)
+                                       msgs = "Protect invite diaktifkan\nDi Group : " +str(ginfo.name)
+                                  cl.sendMessage(msg.to, "ãDiaktifkanã\n" + msgs)
+                              elif spl == 'off':
+                                    if msg.to in protectinvite:
+                                         protectinvite.remove(msg.to)
+                                         ginfo = cl.getGroup(msg.to)
+                                         msgs = "Protect invite dinonaktifkan\nDi Group : " +str(ginfo.name)
+                                    else:
+                                         msgs = "Protect invite sudah tidak aktif"
+                                    cl.sendMessage(msg.to, "ãDinonaktifkanã\n" + msgs)
 
                         elif 'Protectjoin ' in msg.text:
                            if msg._from in admin:
@@ -2687,10 +3017,11 @@ def bot(op):
                                          msgs = "Ghost Sudah Tidak Aktif"
                                     cl.sendMessage(msg.to, "「Dinonaktifkan」\n" + msgs)                                    
 
-                        elif 'Allpro' in msg.text:
-                           if msg._from in admin:
-                              spl = msg.text.replace('Allpro','')
+                        elif 'Allpro ' in msg.text:
+                           if msg._from in admin:                             
+                              spl = msg.text.replace('Allpro ','')
                               if spl == 'on':
+                                #if wait["allprotect"] == True:
                                   if msg.to in protectqr:
                                        msgs = ""
                                   else:
@@ -2699,19 +3030,30 @@ def bot(op):
                                       msgs = ""
                                   else:
                                       protectkick.append(msg.to)
-                                  if msg.to in protectjoin:
+                                  if msg.to in protectinvite:
                                       msgs = ""
                                   else:
-                                      protectjoin.append(msg.to)
+                                      protectinvite.append(msg.to)
+                                  if msg.to in protectantijs:
+                                      msgs = ""
+                                  else:
+                                      protectantijs.append(msg.to)
+                                  if msg.to in ghost:
+                                      msgs = ""
+                                  else:
+                                      ghost.append(msg.to)                                      
                                   if msg.to in protectcancel:
                                       ginfo = cl.getGroup(msg.to)
-                                      msgs = "Semua protect sudah on\nDi Group : " +str(ginfo.name)
+                                      msgs = "Status : [ ON ]\nDi Group : " +str(ginfo.name)
+                                      msgs += "\nSemua sudah diaktifkan"
                                   else:
                                       protectcancel.append(msg.to)
                                       ginfo = cl.getGroup(msg.to)
-                                      msgs = "Berhasil mengaktifkan semua protect\nDi Group : " +str(ginfo.name)
-                                  cl.sendMessage(msg.to, "「Diaktifkan」\n" + msgs)
+                                      msgs = "Status : [ ON ]\nDi Group : " +str(ginfo.name)
+                                      msgs += "\nSemua protection diaktifkan"
+                                  cl.sendMessage(msg.to, "ã Status Protection ã\n" + msgs)
                               elif spl == 'off':
+                                 #if wait["allprotect"] == False:
                                     if msg.to in protectqr:
                                          protectqr.remove(msg.to)
                                     else:
@@ -2720,18 +3062,28 @@ def bot(op):
                                          protectkick.remove(msg.to)
                                     else:
                                          msgs = ""
-                                    if msg.to in protectjoin:
-                                         protectjoin.remove(msg.to)
+                                    if msg.to in protectinvite:
+                                         protectinvite.remove(msg.to)
+                                    else:
+                                         msgs = ""
+                                    if msg.to in protectantijs:
+                                         protectantijs.remove(msg.to)
+                                    else:
+                                         msgs = ""
+                                    if msg.to in ghost:
+                                         ghost.remove(msg.to)
                                     else:
                                          msgs = ""
                                     if msg.to in protectcancel:
                                          protectcancel.remove(msg.to)
                                          ginfo = cl.getGroup(msg.to)
-                                         msgs = "Berhasil menonaktifkan semua protect\nDi Group : " +str(ginfo.name)
+                                         msgs = "Status : [ OFF ]\nDi Group : " +str(ginfo.name)
+                                         msgs += "\nSemua protection dimatikan"
                                     else:
                                          ginfo = cl.getGroup(msg.to)
-                                         msgs = "Semua protect sudah off\nDi Group : " +str(ginfo.name)
-                                    cl.sendMessage(msg.to, "「Dinonaktifkan」\n" + msgs)
+                                         msgs = "Status : [ OFF ]\nDi Group : " +str(ginfo.name)
+                                         msgs += "\nSemua protection dimatikan"
+                                    cl.sendMessage(msg.to, "ã Status Protection ã\n" + msgs)
 
 #===========KICKOUT============#
                         elif ("Nk " in msg.text):
@@ -3136,7 +3488,7 @@ def bot(op):
                                     a = a + 1
                                     end = '\n'
                                     ma += str(a) + ". " +cl.getContact(m_id).displayName + "\n"
-                                cl.sendMessage(msg.to,"❧ĐPĶ Blacklist User\n\n"+ma+"\nTotal「%s」Blacklist User" %(str(len(wait["blacklist"]))))
+                                cl.sendMessage(msg.to,"Famz_Botz Blacklist User\n\n"+ma+"\nTotal「%s」Blacklist User" %(str(len(wait["blacklist"]))))
 
                         elif cmd == "talkbanlist" or text.lower() == 'talkbanlist':
                           if wait["selfbot"] == True:
