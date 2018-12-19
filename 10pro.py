@@ -37,7 +37,7 @@ lineSettings = kk.getSettings()
 Bmid = ki.getProfile().mid
 responsename3 = ki.getProfile().displayName
 
-kc = LineClient(authToken=("syahbardian3@gmail.com","sbardian71993")
+kc = LineClient("syahbardian3@gmail.com","sbardian71993")
 kc.log("Auth Token : " + str(kc.authToken))
 channel3 = LineChannel(kc)
 kc.log("Channel Access Token : " + str(channel3.channelAccessToken))
@@ -46,7 +46,7 @@ lineSettings = kc.getSettings()
 Cmid = kc.getProfile().mid
 responsename4 = kc.getProfile().displayName
 
-km = LineClient(authToken=("syahbardian2@gmail.com","sbardian71993")
+km = LineClient("syahbardian2@gmail.com","sbardian71993")
 km.log("Auth Token : " + str(km.authToken))
 channel4 = LineChannel(km)
 km.log("Channel Access Token : " + str(channel4.channelAccessToken))
@@ -55,7 +55,7 @@ lineSettings = km.getSettings()
 Dmid = km.getProfile().mid
 responsename5 = km.getProfile().displayName
 
-kb = LineClient(authToken=("bardians45@gmail.com","sbardian71993")
+kb = LineClient("bardians45@gmail.com","sbardian71993")
 kb.log("Auth Token : " + str(kb.authToken))
 channel5 = LineChannel(kb)
 kb.log("Channel Access Token : " + str(channel5.channelAccessToken))
@@ -64,7 +64,7 @@ lineSettings = kb.getSettings()
 Emid = kb.getProfile().mid
 responsename6 = kb.getProfile().displayName
 
-kn = LineClient(authToken=("bardiansyah101@gmail.com","sbardian71993")
+kn = LineClient("bardiansyah101@gmail.com","sbardian71993")
 kn.log("Auth Token : " + str(kn.authToken))
 channel6 = LineChannel(kn)
 kn.log("Channel Access Token : " + str(channel6.channelAccessToken))
@@ -73,7 +73,7 @@ lineSettings = kn.getSettings()
 Fmid = kb.getProfile().mid
 responsename7 = kn.getProfile().displayName
 
-ko = LineClient(authToken=("bardiansyah103@gmail.com","sbardian71993")
+ko = LineClient("bardiansyah103@gmail.com","sbardian71993")
 ko.log("Auth Token : " + str(ko.authToken))
 channel7 = LineChannel(ko)
 ko.log("Channel Access Token : " + str(channel7.channelAccessToken))
@@ -82,7 +82,7 @@ lineSettings = ko.getSettings()
 Gmid = ko.getProfile().mid
 responsename8 = kb.getProfile().displayName
 
-kw = LineClient(authToken=("bardiansyah104@gmail.com","sbardian71993")
+kw = LineClient("bardiansyah104@gmail.com","sbardian71993")
 kw.log("Auth Token : " + str(kw.authToken))
 channel8 = LineChannel(kw)
 kw.log("Channel Access Token : " + str(channel8.channelAccessToken))
@@ -91,7 +91,7 @@ lineSettings = kw.getSettings()
 Hmid = kw.getProfile().mid
 responsename9 = kw.getProfile().displayName
 
-ke = LineClient(authToken=("bardiansyah106@gmail.com","sbardian71993")
+ke = LineClient("bardiansyah106@gmail.com","sbardian71993")
 ke.log("Auth Token : " + str(ke.authToken))
 channel9 = LineChannel(ke)
 ke.log("Channel Access Token : " + str(channel9.channelAccessToken))
@@ -100,7 +100,7 @@ lineSettings = ke.getSettings()
 Imid = ke.getProfile().mid
 responsename10 = ke.getProfile().displayName
 
-ky = LineClient(authToken=("bardiansyah107@gmail.com","sbardian71993")
+ky = LineClient("bardiansyah107@gmail.com","sbardian71993")
 ky.log("Auth Token : " + str(ky.authToken))
 channel10 = LineChannel(ky)
 ky.log("Channel Access Token : " + str(channel10.channelAccessToken))
@@ -109,7 +109,7 @@ lineSettings = ky.getSettings()
 Jmid = ky.getProfile().mid
 responsename11 = ky.getProfile().displayName
 
-sw = LineClient(authToken=("tiarazeta94@gmail.com","sbardian71993")
+sw = LineClient("tiarazeta94@gmail.com","sbardian71993")
 sw.log("Auth Token : " + str(sw.authToken))
 channel11 = LineChannel(sw)
 sw.log("Channel Access Token : " + str(channel11.channelAccessToken))
@@ -398,128 +398,6 @@ def help():
     key = key.title()
     helpMessage = "▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬\n" + \
                   "╔══[ Menu hari ini ]\n"+\
-                  "║☯➸ " + key + "Me\n" + \
-                  "║☯➸ " + key + "Mid「@」\n" + \
-                  "║☯➸ " + key + "Info「@」\n" + \
-                  "║☯➸ " + key + "Nk「@」\n" + \
-                  "║☯➸ " + key + "Kick1「@」\n" + \
-                  "║☯➸ " + key + "Mybot\n" + \
-                  "║☯➸ " + key + "Status\n" + \
-                  "║☯➸ " + key + "About\n" + \
-                  "║☯➸ " + key + "Restart\n" + \
-                  "║☯➸ " + key + "Runtime\n" + \
-                  "║☯➸ " + key + "Creator\n" + \
-                  "║☯➸ " + key + "Speed/Sp\n" + \
-                  "║☯➸ " + key + "Respontime\n" + \
-                  "║☯➸ " + key + "Sepinya\n" + \
-                  "║☯➸ " + key + "Joinall\n" + \
-                  "║☯➸ " + key + "Byeall\n" + \
-                  "║☯➸ " + key + "Bye me\n" + \
-                  "║☯➸ " + key + "Leave「Namagrup」\n" + \
-                  "║☯➸ " + key + "Ginfo\n" + \
-                  "║☯➸ " + key + "Open\n" + \
-                  "║☯➸ " + key + "Close\n" + \
-                  "║☯➸ " + key + "Url\n" + \
-                  "║☯➸ " + key + "Gruplist\n" + \
-                  "║☯➸ " + key + "Open「nomer」\n" + \
-                  "║☯➸ " + key + "Close「nomer」\n" + \
-                  "║☯➸ " + key + "Infogrup「nomer」\n" + \
-                  "║☯➸ " + key + "Infomem「nomer」\n" + \
-                  "║☯➸ " + key + "Leaveall「nomer」\n" + \
-                  "║☯➸ " + key + "Remove chat\n" + \
-                  "║☯➸ " + key + "Lurking「on/off」\n" + \
-                  "║☯➸ " + key + "Lurkers\n" + \
-                  "║☯➸ " + key + "Sider「on/off」\n" + \
-                  "║☯➸ " + key + "Updatefoto\n" + \
-                  "║☯➸ " + key + "Updategrup\n" + \
-                  "║☯➸ " + key + "Updatebot\n" + \
-                  "║☯➸ " + key + "Broadcast:「Text」\n" + \
-                  "║☯➸ " + key + "Setkey「New Key」\n" + \
-                  "║☯➸ " + key + "Mykey\n" + \
-                  "║☯➸ " + key + "Resetkey\n" + \
-                  "╠══[ ᴍᴇᴅɪᴀ ]\n" + \
-                  "║☯➸ " + key + "Kode wilayah\n" + \
-                  "║☯➸ " + key + "Listmp3\n" + \
-                  "║☯➸ " + key + "Listvideo\n" + \
-                  "║☯➸ " + key + "Listimage\n" + \
-                  "║☯➸ " + key + "Liststicker\n" + \
-                  "║☯➸ " + key + "Addimg「Teks」\n" + \
-                  "║☯➸ " + key + "Dellimg「Teks」\n" + \
-                  "║☯➸ " + key + "Addmp3「Teks」\n" + \
-                  "║☯➸ " + key + "Dellmp3「Teks」\n" + \
-                  "║☯➸ " + key + "Addvideo「Teks」\n" + \
-                  "║☯➸ " + key + "Dellvideo「Teks」\n" + \
-                  "║☯➸ " + key + "Addsticker「Teks」\n" + \
-                  "║☯➸ " + key + "Dellsticker「Teks」\n" + \
-                  "║☯➸ " + key + "Spamtag:「jumlahnya」\n" + \
-                  "║☯➸ " + key + "Spamtag「@」\n" + \
-                  "║☯➸ " + key + "Spamcall:「jumlahnya」\n" + \
-                  "║☯➸ " + key + "Spamcall\n" + \
-                  "║☯➸ " + key + "Ytmp3:「Judul Lagu」\n" + \
-                  "║☯➸ " + key + "Ytmp4:「Judul Video」\n" + \
-                  "║☯➸ " + key + "Musik「Nama Penyanyi」\n" + \
-                  "║☯➸ " + key + "Get-fs「Query」\n" + \
-                  "║☯➸ " + key + "Get-line「ID Line」\n" + \
-                  "║☯➸ " + key + "Get-apk「Query」\n" + \
-                  "║☯➸ " + key + "Get-gif「Query」\n" + \
-                  "║☯➸ " + key + "Get-xxx「Query」\n" + \
-                  "║☯➸ " + key + "Get-anime「Query」\n" + \
-                  "║☯➸ " + key + "Get-mimpi「Query」\n" + \
-                  "║☯➸ " + key + "Get-audio「Query」\n" + \
-                  "║☯➸ " + key + "Get-mp3「Query」\n" + \
-                  "║☯➸ " + key + "Get-video「Query」\n" + \
-                  "║☯➸ " + key + "Get-bintang「Zodiak」\n" + \
-                  "║☯➸ " + key + "Get-zodiak「Zodiak」\n" + \
-                  "║☯➸ " + key + "Get-sholat「Nama Kota」\n" + \
-                  "║☯➸ " + key + "Get-cuaca「Nama Kota」\n" + \
-                  "║☯➸ " + key + "Get-lokasi「Nama Kota」\n" + \
-                  "║☯➸ " + key + "Get-lirik「Judul Lagu」\n" + \
-                  "║☯➸ " + key + "Get-instagram「User Name」\n" + \
-                  "║☯➸ " + key + "Get-date「tgl-bln-thn」\n" + \
-                  "╠══[ protect ]\n" + \
-                  "║☯➸ " + key + "Notag「on/off」\n" + \
-                  "║☯➸ " + key + "Allpro「on/off」\n" + \
-                  "║☯➸ " + key + "Protecturl「on/off」\n" + \
-                  "║☯➸ " + key + "Protectjoin「on/off」\n" + \
-                  "║☯➸ " + key + "Protectkick「on/off」\n" + \
-                  "║☯➸ " + key + "Protectinvite「on/off」\n" + \
-                  "║☯➸ " + key + "Protectcancel「on/off」\n" + \
-                  "║☯➸ " + key + "Antijs「on/off」\n" + \
-                  "║☯➸ " + key + "Ghost「on/off」\n" + \
-                  "╠══[ Set kicker ]\n" + \
-                  "║☯➸ " + key + "Kick「on/off」\n" + \
-                  "║☯➸ " + key + "Nk「@」\n" + \
-                  "║☯➸ " + key + "Kick1「@」\n" + \
-                  "╠══[ Set user ]\n" + \
-                  "║☯➸ " + key + "Invite「on/off」\n" + \
-                  "║☯➸ " + key + "Sticker「on/off」\n" + \
-                  "║☯➸ " + key + "Unsend「on/off」\n" + \
-                  "║☯➸ " + key + "Respontime「on/off」\n" + \
-                  "║☯➸ " + key + "Timeline「on/off」\n" + \
-                  "║☯➸ " + key + "Contact「on/off」\n" + \
-                  "║☯➸ " + key + "Autojoin「on/off」\n" + \
-                  "║☯➸ " + key + "Autoadd「on/off」\n" + \
-                  "║☯➸ " + key + "Welcome「on/off」\n" + \
-                  "║☯➸ " + key + "Autoleave「on/off」\n" + \
-                  "║☯➸ " + key + "Jointicket「on/off」\n" + \
-                  "╠══[ Set Admin ]\n" + \
-                  "║☯➸ " + key + "Self「on/off」\n" + \
-                  "║☯➸ " + key + "Bot:on\n" + \
-                  "║☯➸ " + key + "Bot:expell\n" + \
-                  "║☯➸ " + key + "Staff:on\n" + \
-                  "║☯➸ " + key + "Staff:expell\n" + \
-                  "║☯➸ " + key + "Admin:on\n" + \
-                  "║☯➸ " + key + "Admin:expell\n" + \
-                  "║☯➸ " + key + "Botadd「@」\n" + \
-                  "║☯➸ " + key + "Botdell「@」\n" + \
-                  "║☯➸ " + key + "Staffadd「@」\n" + \
-                  "║☯➸ " + key + "Staffdell「@」\n" + \
-                  "║☯➸ " + key + "Adminadd「@」\n" + \
-                  "║☯➸ " + key + "Admindell「@」\n" + \
-                  "║☯➸ " + key + "Refresh\n" + \
-                  "║☯➸ " + key + "Listbot\n" + \
-                  "║☯➸ " + key + "Listadmin\n" + \
-                  "║☯➸ " + key + "Listprotect\n" + \
                   "╚══[     Famz_Botz_FI      ]\n" + \
                   "▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬\n" + \
                   "\nKetik「 Refresh 」jika makanannya sudah habis...\n"
@@ -529,36 +407,6 @@ def helpbot():
     key = Setmain["keyCommand"]
     key = key.title()
     helpMessage1 = "▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬\n" + \
-                  "╔══[ Makan__Malam ]\n"+\
-                  "║☯➸ " + key + "Blc\n" + \
-                  "║☯➸ " + key + "Ban:on\n" + \
-                  "║☯➸ " + key + "Unban:on\n" + \
-                  "║☯➸ " + key + "Ban「@」\n" + \
-                  "║☯➸ " + key + "Unban「@」\n" + \
-                  "║☯➸ " + key + "Talkban「@」\n" + \
-                  "║☯➸ " + key + "Untalkban「@」\n" + \
-                  "║☯➸ " + key + "Talkban:on\n" + \
-                  "║☯➸ " + key + "Untalkban:on\n" + \
-                  "║☯➸ " + key + "Banlist\n" + \
-                  "║☯➸ " + key + "Talkbanlist\n" + \
-                  "║☯➸ " + key + "Clearban\n" + \
-                  "║☯➸ " + key + "Refresh\n" + \
-                  "╠══[ Cek Seting ]\n" + \
-                  "║☯➸ " + key + "Cek sider\n" + \
-                  "║☯➸ " + key + "Cek spam\n" + \
-                  "║☯➸ " + key + "Cek pesan \n" + \
-                  "║☯➸ " + key + "Cek respon \n" + \
-                  "║☯➸ " + key + "Cek leave\n" + \
-                  "║☯➸ " + key + "Cek welcome\n" + \
-                  "║☯➸ " + key + "Set sider:「Text」\n" + \
-                  "║☯➸ " + key + "Set spam:「Text」\n" + \
-                  "║☯➸ " + key + "Set pesan:「Text」\n" + \
-                  "║☯➸ " + key + "Set respon:「Text」\n" + \
-                  "║☯➸ " + key + "Set leave:「Text」\n" + \
-                  "║☯➸ " + key + "Set welcome:「Text」\n" + \
-                  "║☯➸ " + key + "Myname:「Nama」\n" + \
-                  "║☯➸ " + key + "Gift:「Mid korban」「Jumlah」\n" + \
-                  "║☯➸ " + key + "Spam:「Mid korban」「Jumlah」\n" + \
                   "╚══[     Famz_Botz_FI      ]\n" + \
                   "▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬\n" + \
                   "\nKetik「 Refresh 」jika makannya sudah kenyang...\n"
@@ -872,6 +720,26 @@ def bot(op):
                         pass
                     else:
                         cl.sendText(op.param1, wait["message"])
+
+        if op.type == 19:
+            if op.param1 in protectname:
+            	    wait["blacklist"][op.param2] = True
+                    try:
+                        G = random.choice(ABC).getGroup(op.param1)
+                    except:
+                        pass
+                    G.name = settings['protect_name'][op.param1]
+                    try:
+                        random.choice(ABC).updateGroup(G)
+                    except:
+                        pass
+                    if op.param2 in Bots:
+                    	pass
+                    else:
+                        try:
+                            random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
+                        except:
+                            pass
 
         if op.type == 19:
             if op.param1 in protectkick:
@@ -3685,6 +3553,26 @@ def bot(op):
                                     else:
                                          msgs = "Welcome Msg sudah tidak aktif"
                                     cl.sendMessage(msg.to, "「Dinonaktifkan」\n" + msgs)
+                                    
+                        elif 'Protectname ' in msg.text:
+                           if msg._from in admin:
+                              spl = msg.text.replace('Protectname ','')
+                              if spl == 'on':
+                                  if msg.to in protectname:
+                                       msgs = "Protect name sudah aktif"
+                                  else:
+                                       protectname.append(msg.to)
+                                       ginfo = cl.getGroup(msg.to)
+                                       msgs = "Protect name diaktifkan\nDi Group : " +str(ginfo.name)
+                                  cl.sendMessage(msg.to, "「Diaktifkan」\n" + msgs)
+                              elif spl == 'off':
+                                    if msg.to in protectname:
+                                         protectname.remove(msg.to)
+                                         ginfo = cl.getGroup(msg.to)
+                                         msgs = "Protect name dinonaktifkan\nDi Group : " +str(ginfo.name)
+                                    else:
+                                         msgs = "Protect name sudah tidak aktif"
+                                    cl.sendMessage(msg.to, "「Dinonaktifkan」\n" + msgs)
 
                         elif 'Protecturl ' in msg.text:
                            if msg._from in admin:
@@ -3834,6 +3722,10 @@ def bot(op):
                                        msgs = ""
                                   else:
                                        protectqr.append(msg.to)
+                                  if msg.to in protectname:
+                                      msgs = ""
+                                  else:
+                                      protectname.append(msg.to)
                                   if msg.to in protectkick:
                                       msgs = ""
                                   else:
@@ -3864,6 +3756,10 @@ def bot(op):
                                  #if wait["allprotect"] == False:
                                     if msg.to in protectqr:
                                          protectqr.remove(msg.to)
+                                    else:
+                                         msgs = ""
+                                    if msg.to in protectname:
+                                         protectname.remove(msg.to)
                                     else:
                                          msgs = ""
                                     if msg.to in protectkick:
