@@ -3026,7 +3026,7 @@ def bot(op):
 
                         elif 'Famz allpro ' in msg.text:
                            if msg._from in admin:                             
-                              spl = msg.text.replace('Allpro ','')
+                              spl = msg.text.replace('Famz allpro ','')
                               if spl == 'on':
                                 #if wait["allprotect"] == True:
                                   if msg.to in protectqr:
