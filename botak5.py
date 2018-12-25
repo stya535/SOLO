@@ -10,7 +10,7 @@ from bs4 import BeautifulSoup
 from googletrans import Translator
 import youtube_dl
 #=============
-cl = LineClient(authToken='EASxA3c8QbtxSaZrbanf.9ocyg1talQ+9eEucqY0ihW.ByOKTJJW95oQRY4lz8Kh12CJ11uqcmh81W4qzuxIYlw=')
+cl = LineClient("anisbahar102@gmail.com","sbardian71993")
 cl.log("Auth Token : " + str(cl.authToken))
 channel = LineChannel(cl)
 cl.log("Channel Access Token : " + str(channel.channelAccessToken))
@@ -19,7 +19,7 @@ lineSettings = cl.getSettings()
 mid = cl.getProfile().mid
 responsename1 = cl.getProfile().displayName
 
-ki = LineClient(authToken='EAHu3PatckQuEwctTFuc.Ab1BijZe40SubzicZIooJa.L6e6hAM4slaRCQKcRPzAIoeqc7NYWuzvDh0d2z9u18w=')
+ki = LineClient("anisbahar101@gmail.com","sbardian71993")
 ki.log("Auth Token : " + str(ki.authToken))
 channel1 = LineChannel(ki)
 ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
@@ -28,7 +28,7 @@ lineSettings = ki.getSettings()
 Amid = ki.getProfile().mid
 responsename2 = ki.getProfile().displayName
 
-kk = LineClient(authToken='EAYp2LSLbSPhtEd6Vire.K6O6ZqzuTDigBTLjLyh8RG.xAVhcklmEULsc/R6TRNEk/ak7DvZlTb/ODz73VgQ5MI=')
+kk = LineClient("tiarazeta93@gmail.com","sbardian71993")
 kk.log("Auth Token : " + str(kk.authToken))
 channel2 = LineChannel(kk)
 kk.log("Channel Access Token : " + str(channel2.channelAccessToken))
@@ -37,7 +37,7 @@ lineSettings = kk.getSettings()
 Bmid = ki.getProfile().mid
 responsename3 = ki.getProfile().displayName
 
-kc = LineClient(authToken='EAYp2LSLbSPhtEd6Vire.K6O6ZqzuTDigBTLjLyh8RG.xAVhcklmEULsc/R6TRNEk/ak7DvZlTb/ODz73VgQ5MI=')
+kc = LineClient("bardiansyah110@gmail.com","sbardian71993))
 kc.log("Auth Token : " + str(kc.authToken))
 channel3 = LineChannel(kc)
 kc.log("Channel Access Token : " + str(channel3.channelAccessToken))
@@ -46,7 +46,7 @@ lineSettings = kc.getSettings()
 Cmid = kc.getProfile().mid
 responsename4 = kc.getProfile().displayName
 
-sw = LineClient(authToken='EAV37CthFPfhASabDBc8.jstmoOnVDIqLZOlVtqAMsa.y16TkAVHeSam1ZhvSWtf09aRTM2LbOQaCCqgvTzSQMw=')
+sw = LineClient("sweaknury@gmail.com","sbardian71993")
 sw.log("Auth Token : " + str(sw.authToken))
 channel6 = LineChannel(sw)
 sw.log("Channel Access Token : " + str(channel6.channelAccessToken))
@@ -2269,6 +2269,13 @@ def bot(op):
                                     end = '\n'
                                     mf += str(a) + ". " +cl.getGroup(group).name + "\n"
                                 cl.sendMessage(msg.to,"ãâââââ¦Famz_Protectionâ§ââââºã\n\nãâ­ã PROTECT URL :\n"+ma+"\nãâ­ã PROTECT KICK :\n"+mb+"\nãâ­ã PROTECT JOIN :\n"+md+"\nãâ­ã PROTECT CANCEL:\n"+mc+"\nãâ­ã PROTECT INVITE:\n"+me+"\nãâ­ã PROTECT ANTIJS :\n"+mf+"\nTotalã%sãGrup diamankan" %(str(len(protectqr)+len(protectkick)+len(protectjoin)+len(protectcancel)+len(protectinvite)+len(protectantijs))))
+
+                        elif cmd == "respon":
+                          if wait["selfbot"] == True:
+                            if msg._from in admin:
+                                ki.sendMessage(msg.to,responsename1)
+                                kk.sendMessage(msg.to,responsename2)
+                                kc.sendMessage(msg.to,responsename3)
 
                         elif cmd == "invitebot":
                           if wait["selfbot"] == True:
