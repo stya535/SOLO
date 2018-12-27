@@ -23,7 +23,7 @@
     "dellstaff": false,
     "detectMention": false,
     "leave": "Good Bye, See You Next Time 😃",
-    "limit": 1,
+    "limit": 5,
     "mention": "NAH NGINTIP",
     "message": "Terimakasih sudah add saya 😃",
     "owner": {},
@@ -35,4 +35,6 @@
     "wblacklist": false,
     "welcome": "Selamat datang ",
     "welcomeOn": false
+    "protectantijsOn":true,
+    "ghostOn":true,
 }
