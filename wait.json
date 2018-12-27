@@ -35,6 +35,6 @@
     "wblacklist": false,
     "welcome": "Selamat datang ",
     "welcomeOn": false
-    "protectantijsOn":true,
-    "ghostOn":true,
+    "protectantijsOn": true,
+    "ghostOn": true,
 }
