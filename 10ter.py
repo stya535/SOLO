@@ -399,7 +399,7 @@ def help():
     key = Setmain["keyCommand"]
     key = key.title()
     helpMessage = "▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬\n" + \
-                  "╔══[ SELFBOT-BY:MAX ]\n"+\
+                  "╔══[ ᴛᴇʀ ᴛᴇᴀᴍ sᴇʟғ ᴍᴀx.ᴘʏ ]\n"+\
                   "║☯➸ " + key + "Help\n" + \
                   "║☯➸ " + key + "Help bot\n" + \
                   "║☯➸ " + key + "Me\n" + \
@@ -526,7 +526,7 @@ def help():
                   "║☯➸ " + key + "Listbot\n" + \
                   "║☯➸ " + key + "Listadmin\n" + \
                   "║☯➸ " + key + "Listprotect\n" + \
-                  "╚══[ SELFBOT-BY:MAX ]\n" + \
+                  "╚══[ ᴛᴇʀ ᴛᴇᴀᴍ sᴇʟғ ᴍᴀx.ᴘʏ ]\n" + \
                   "▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬\n" + \
                   "\nKetik「 Refresh 」jika makanannya sudah habis...\n"
     return helpMessage
@@ -535,7 +535,7 @@ def helpbot():
     key = Setmain["keyCommand"]
     key = key.title()
     helpMessage1 = "▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬\n" + \
-                  "╔══[ SELFBOT-BY:MAX ]\n"+\
+                  "╔══[ ᴛᴇʀ ᴛᴇᴀᴍ sᴇʟғ ᴍᴀx.ᴘʏ ]\n"+\
                   "║☯➸ " + key + "Blc\n" + \
                   "║☯➸ " + key + "Ban:on\n" + \
                   "║☯➸ " + key + "Unban:on\n" + \
@@ -565,7 +565,7 @@ def helpbot():
                   "║☯➸ " + key + "Myname:「Nama」\n" + \
                   "║☯➸ " + key + "Gift:「Mid korban」「Jumlah」\n" + \
                   "║☯➸ " + key + "Spam:「Mid korban」「Jumlah」\n" + \
-                  "╚══[ SELFBOT-BY:MAX ]\n" + \
+                  "╚══[ ᴛᴇʀ ᴛᴇᴀᴍ sᴇʟғ ᴍᴀx.ᴘʏ ]\n" + \
                   "▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬\n" + \
                   "\nKetik「 Refresh 」jika makannya sudah kenyang...\n"
     return helpMessage1
