@@ -214,8 +214,8 @@ wait = {
     "talkban":True,
     "contact":False,
     'autoJoin':True,
-    'autoBlock':True,
-    'autoAdd':False,
+    'autoBlock':False,
+    'autoAdd':True,
     'autoRead':False,
     'autoLeave':False,
     'autoLeave1':False,
@@ -230,7 +230,7 @@ wait = {
     "Respontag":"Apaan tag2 kalo penting VC aja langsung",
     "welcome":"Selamat datang & semoga betah",
     "comment":"Like like & like ",
-    "message":"[ Auto block ]\nมีอะไร รอมาตอบ 🕵",
+    "message":"[ Auto block ]\nThanks for add me 😭",
 }
 
 read = {
@@ -4394,6 +4394,18 @@ def bot(op):
                             if msg._from in admin:
                                 wait["autoLeave"] = False
                                 cl.sendText(msg.to,"Autoleave dinonaktifkan")
+
+                        elif cmd == "autoblock on" or text.lower() == 'autoblock on':
+                          if wait["selfbot"] == True:
+                            if msg._from in admin:
+                                wait["autoBlock"] = True
+                                cl.sendText(msg.to,"「 Status Autoleave 」\nAutoleave telah diaktifkan")
+
+                        elif cmd == "autoblock off" or text.lower() == 'autoblock off':
+                          if wait["selfbot"] == True:
+                            if msg._from in admin:
+                                wait["autoBlock"] = False
+                                cl.sendText(msg.to,"「 Status Autoleave 」\nAutoleave telah dinonaktifkan")
 
                         elif cmd == "autoadd on" or text.lower() == 'autoadd on':
                           if wait["selfbot"] == True:
