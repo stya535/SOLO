@@ -123,9 +123,9 @@ print("---LOGIN SUCCES---\nBY: SELFBOT-BY:MAX")
 poll = LinePoll(cl)
 call = cl
 creator = ["u78a57486cd0847dd56f96f652ffa1a0f"]
-owner = ["u78a57486cd0847dd56f96f652ffa1a0f"]
-admin = ["u78a57486cd0847dd56f96f652ffa1a0f"]
-staff = ["u78a57486cd0847dd56f96f652ffa1a0f"]
+owner = ["u3ced60bd6a6e3b0bbc3f021b96a9fee7"]
+admin = ["u3ced60bd6a6e3b0bbc3f021b96a9fee7"]
+staff = ["u3ced60bd6a6e3b0bbc3f021b96a9fee7"]
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
@@ -870,7 +870,7 @@ def bot(op):
             print ("[ 5 ] NOTIFIED AUTO BLOCK CONTACT")
             if wait["autoBlock"] == True:
                 cl.sendText(op.param1, wait["message"])
-                cl.sendContact(op.param1, "u78a57486cd0847dd56f96f652ffa1a0f")
+                cl.sendContact(op.param1, "u3ced60bd6a6e3b0bbc3f021b96a9fee7")
                 cl.blockContact(op.param1)
 
         if op.type == 19:
@@ -4393,6 +4393,18 @@ def bot(op):
                             if msg._from in admin:
                                 wait["autoLeave"] = False
                                 cl.sendText(msg.to,"Autoleave dinonaktifkan")
+
+                        elif cmd == "autoblock on" or text.lower() == 'autoblock on':
+                          if wait["selfbot"] == True:
+                            if msg._from in admin:
+                                wait["autoBlock"] = True
+                                cl.sendText(msg.to,"「 Status Autoleave 」\nAutoleave telah diaktifkan")
+
+                        elif cmd == "autoblock off" or text.lower() == 'autoblock off':
+                          if wait["selfbot"] == True:
+                            if msg._from in admin:
+                                wait["autoBlock"] = False
+                                cl.sendText(msg.to,"「 Status Autoleave 」\nAutoleave telah dinonaktifkan")
 
                         elif cmd == "autoadd on" or text.lower() == 'autoadd on':
                           if wait["selfbot"] == True:
