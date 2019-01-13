@@ -420,6 +420,8 @@ def help():
                   "║👿☈ " + key + "Sepinya\n" + \
                   "║👿☈ " + key + "join\n" + \
                   "║👿☈ " + key + "bye\n" + \
+                  "║👿☈ " + key + "Ghost join\n" + \
+                  "║👿☈ " + key + "Ghost bye\n" + \
                   "║👿☈ " + key + "Bye me\n" + \
                   "║👿☈ " + key + "Leave「Namagrup」\n" + \
                   "║👿☈ " + key + "Ginfo\n" + \
@@ -536,7 +538,7 @@ def helpbot():
     key = Setmain["keyCommand"]
     key = key.title()
     helpMessage1 = "▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬\n" + \
-                  "╔═[ 😈 SELFBOT-BY:MAX 😈 ]\n"+\
+                  "╔═[ Help blacklist ]\n"+\
                   "║🛡☈ " + key + "Blc\n" + \
                   "║🛡☈ " + key + "Ban:on\n" + \
                   "║🛡☈ " + key + "Unban:on\n" + \
@@ -550,6 +552,42 @@ def helpbot():
                   "║🛡☈ " + key + "Talkbanlist\n" + \
                   "║🛡☈ " + key + "Clearban\n" + \
                   "║🛡☈ " + key + "Refresh\n" + \
+                  "╠══[ Help bot ]\n" + \
+                  "║👿☈ " + key + "Assist1\n" + \
+                  "║👿☈ " + key + "Assist2\n" + \
+                  "║👿☈ " + key + "Assist3\n" + \
+                  "║👿☈ " + key + "Assist4\n" + \
+                  "║👿☈ " + key + "Assist5\n" + \
+                  "║👿☈ " + key + "Assist6\n" + \
+                  "║👿☈ " + key + "Assist7\n" + \
+                  "║👿☈ " + key + "Assist8\n" + \
+                  "║👿☈ " + key + "Assist9\n" + \
+                  "║👿☈ " + key + "Assist10\n" + \
+                  "╠══[ Help update ]\n" + \
+                  "║🕵☈ " + key + "Updatefoto\n" + \
+                  "║🕵☈ " + key + "Bot1up\n" + \
+                  "║🕵☈ " + key + "Bot2up\n" + \
+                  "║🕵☈ " + key + "Bot3up\n" + \
+                  "║🕵☈ " + key + "Bot4up\n" + \
+                  "║🕵☈ " + key + "Bot5up\n" + \
+                  "║🕵☈ " + key + "Bot6up\n" + \
+                  "║🕵☈ " + key + "Bot7up\n" + \
+                  "║🕵☈ " + key + "Bot8up\n" + \
+                  "║🕵☈ " + key + "Bot9up\n" + \
+                  "║🕵☈ " + key + "Bot10up\n" + \
+                  "║🕵☈ " + key + "Ghostup\n" + \
+                  "║🕵☈ " + key + "Myname:「Name」\n" + \
+                  "║🕵☈ " + key + "Bot1name:「Name」\n" + \
+                  "║🕵☈ " + key + "Bot2name:「Name」\n" + \
+                  "║🕵☈ " + key + "Bot3name:「Name」\n" + \
+                  "║🕵☈ " + key + "Bot4name:「Name」\n" + \
+                  "║🕵☈ " + key + "Bot5name:「Name」\n" + \
+                  "║🕵☈ " + key + "Bot6name:「Name」\n" + \
+                  "║🕵☈ " + key + "Bot7name:「Name」\n" + \
+                  "║🕵☈ " + key + "Bot8name:「Name」\n" + \
+                  "║🕵☈ " + key + "Bot9name:「Name」\n" + \
+                  "║🕵☈ " + key + "Bot10name:「Name」\n" + \
+                  "║🕵☈ " + key + "Ghostname:「Name」\n" + \
                   "╠══[ Cek Seting ]\n" + \
                   "║🤖☈ " + key + "Cek sider\n" + \
                   "║🤖☈ " + key + "Cek spam\n" + \
@@ -2481,20 +2519,10 @@ def bot(op):
                                 Setmain["ARfoto"][Jmid] = True
                                 ky.sendText(msg.to,"Kirim fotonya.....")
                                 
-                        elif cmd == "antijsup":
-                            if msg._from in admin:
-                                Setmain["ARfoto"][JSmid] = True
-                                js.sendText(msg.to,"Kirim fotonya.....")
-                                
-                        elif cmd == "ghost1up":
+                        elif cmd == "ghostup":
                             if msg._from in admin:
                                 Setmain["ARfoto"][Zmid] = True
                                 sw.sendText(msg.to,"Kirim fotonya.....")
-                                
-                        elif cmd == "ghost2up":
-                            if msg._from in admin:
-                                Setmain["ARfoto"][Xmid] = True
-                                sx.sendText(msg.to,"Kirim fotonya.....")
 
                         elif cmd.startswith("myname: "):
                           if msg._from in admin:
@@ -2606,7 +2634,7 @@ def bot(op):
                                 ky.updateProfile(profile)
                                 ky.sendMessage(msg.to,"Nama diganti jadi " + string + "")
               
-                        elif cmd.startswith("ghost1name: "):
+                        elif cmd.startswith("ghostname: "):
                           if msg._from in admin:
                             separate = msg.text.split(" ")
                             string = msg.text.replace(separate[0] + " ","")
@@ -3225,6 +3253,11 @@ def bot(op):
                                         kc.leaveGroup(i)
                                         km.leaveGroup(i)
                                         kb.leaveGroup(i)
+                                        kn.leaveGroup(i)
+                                        ko.leaveGroup(i)
+                                        kw.leaveGroup(i)
+                                        ke.leaveGroup(i)
+                                        ky.leaveGroup(i)
                                         cl.sendMessage(to,"Berhasil keluar dari grup " +h)
 
                         elif cmd == "assist1":
@@ -3381,19 +3414,53 @@ def bot(op):
                                 get_profile_time_start = time.time()
                                 get_profile = cl.getProfile()
                                 get_profile_time = time.time() - get_profile_time_start
-                                get_group_time_start = time.time()
-                                get_group = cl.getGroupIdsJoined()
-                                get_group_time = time.time() - get_group_time_start
-                                get_contact_time_start = time.time()
-                                get_contact = cl.getContact(mid)
-                                get_contact_time = time.time() - get_contact_time_start
-                                cl.sendMessage(msg.to, "Speed respon\n\n - Get Profile\n   %.10f\n - Get Contact\n   %.10f\n - Get Group\n   %.10f" % (get_profile_time/3,get_contact_time/3,get_group_time/3))
+                                cl.sendMessage(msg.to, "Speed\n%.10f detik" % (get_profile_time/3))
+                                get_profile_time_start = time.time()
+                                get_profile = cl.getProfile()
+                                get_profile_time = time.time() - get_profile_time_start
+                                ki.sendMessage(msg.to, "Speed\n%.10f detik" % (get_profile_time/3))
+                                get_profile_time_start = time.time()
+                                get_profile = cl.getProfile()
+                                get_profile_time = time.time() - get_profile_time_start
+                                kk.sendMessage(msg.to, "Speed\n%.10f detik" % (get_profile_time/3))
+                                get_profile_time_start = time.time()
+                                get_profile = cl.getProfile()
+                                get_profile_time = time.time() - get_profile_time_start
+                                kc.sendMessage(msg.to, "Speed\n%.10f detik" % (get_profile_time/3))
+                                get_profile_time_start = time.time()
+                                get_profile = cl.getProfile()
+                                get_profile_time = time.time() - get_profile_time_start
+                                km.sendMessage(msg.to, "Speed\n%.10f detik" % (get_profile_time/3))
+                                get_profile_time_start = time.time()
+                                get_profile = cl.getProfile()
+                                get_profile_time = time.time() - get_profile_time_start
+                                kb.sendMessage(msg.to, "Speed\n%.10f detik" % (get_profile_time/3))
+                                get_profile_time_start = time.time()
+                                get_profile = cl.getProfile()
+                                get_profile_time = time.time() - get_profile_time_start
+                                kn.sendMessage(msg.to, "Speed\n%.10f detik" % (get_profile_time/3))
+                                get_profile_time_start = time.time()
+                                get_profile = cl.getProfile()
+                                get_profile_time = time.time() - get_profile_time_start
+                                ko.sendMessage(msg.to, "Speed\n%.10f detik" % (get_profile_time/3))
+                                get_profile_time_start = time.time()
+                                get_profile = cl.getProfile()
+                                get_profile_time = time.time() - get_profile_time_start
+                                kw.sendMessage(msg.to, "Speed\n%.10f detik" % (get_profile_time/3))
+                                get_profile_time_start = time.time()
+                                get_profile = cl.getProfile()
+                                get_profile_time = time.time() - get_profile_time_start
+                                ke.sendMessage(msg.to, "Speed\n%.10f detik" % (get_profile_time/3))
+                                get_profile_time_start = time.time()
+                                get_profile = cl.getProfile()
+                                get_profile_time = time.time() - get_profile_time_start
+                                ky.sendMessage(msg.to, "Speed\n%.10f detik" % (get_profile_time/3))
 
                         elif cmd == "speed" or cmd == "sp":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                start = time.time()
-                               cl.sendMessage(msg.to, "ngebut bozzz...")
+                               cl.sendMessage(msg.to, "Speed bozzz...")
                                elapsed_time = time.time() - start
                                cl.sendMessage(msg.to, "{} detik".format(str(elapsed_time)))
 
@@ -3401,7 +3468,7 @@ def bot(op):
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                start = time.time()
-                               ki.sendMessage(msg.to, "ngebut bozzz...")
+                               ki.sendMessage(msg.to, "Speed bozzz...")
                                elapsed_time = time.time() - start
                                ki.sendMessage(msg.to, "{} detik".format(str(elapsed_time)))
                                elapsed_time = time.time() - start
@@ -3815,7 +3882,7 @@ def bot(op):
                                 members = [mem.mid for mem in group.members]
                                 jmlh = int(wait["limit"])
                                 cl.sendMessage(msg.to, "Berhasil mengundang {} undangan Call Grup".format(str(wait["limit"])))
-                                if jmlh <= 1000:
+                                if jmlh <= 100000:
                                   for x in range(jmlh):
                                      try:
                                         call.acquireGroupCallRoute(to)
@@ -3840,6 +3907,12 @@ def bot(op):
                                       kc.sendMessage(midd, None, contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58', 'PRDTYPE': 'THEME', 'MSGTPL': '6'}, contentType=9)
                                       km.sendMessage(midd, None, contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58', 'PRDTYPE': 'THEME', 'MSGTPL': '6'}, contentType=9)
                                       kb.sendMessage(midd, None, contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58', 'PRDTYPE': 'THEME', 'MSGTPL': '6'}, contentType=9)
+                                      kn.sendMessage(midd, None, contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58', 'PRDTYPE': 'THEME', 'MSGTPL': '6'}, contentType=9)
+                                      ko.sendMessage(midd, None, contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58', 'PRDTYPE': 'THEME', 'MSGTPL': '6'}, contentType=9)
+                                      kw.sendMessage(midd, None, contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58', 'PRDTYPE': 'THEME', 'MSGTPL': '6'}, contentType=9)
+                                      ke.sendMessage(midd, None, contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58', 'PRDTYPE': 'THEME', 'MSGTPL': '6'}, contentType=9)
+                                      ky.sendMessage(midd, None, contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58', 'PRDTYPE': 'THEME', 'MSGTPL': '6'}, contentType=9)
+                                      sw.sendMessage(midd, None, contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58', 'PRDTYPE': 'THEME', 'MSGTPL': '6'}, contentType=9)
 
                         elif 'Spam: ' in msg.text:
                           if wait["selfbot"] == True:
@@ -3848,7 +3921,7 @@ def bot(op):
                               korban2 = korban.split()
                               midd = korban2[0]
                               jumlah = int(korban2[1])
-                              if jumlah <= 10000:
+                              if jumlah <= 100000:
                                   for var in range(0,jumlah):
                                       cl.sendMessage(midd, str(Setmain["ARmessage1"]))
                                       ki.sendMessage(midd, str(Setmain["ARmessage1"]))
@@ -3856,6 +3929,11 @@ def bot(op):
                                       kc.sendMessage(midd, str(Setmain["ARmessage1"]))
                                       km.sendMessage(midd, str(Setmain["ARmessage1"]))
                                       kb.sendMessage(midd, str(Setmain["ARmessage1"]))
+                                      kn.sendMessage(midd, str(Setmain["ARmessage1"]))
+                                      ko.sendMessage(midd, str(Setmain["ARmessage1"]))
+                                      kw.sendMessage(midd, str(Setmain["ARmessage1"]))
+                                      ke.sendMessage(midd, str(Setmain["ARmessage1"]))
+                                      ky.sendMessage(midd, str(Setmain["ARmessage1"]))
 
                         elif 'ID line: ' in msg.text:
                           if wait["selfbot"] == True:
@@ -4141,11 +4219,8 @@ def bot(op):
                               print("ok")
                               _name = msg.text.replace("Kickgroup","")
                               gs = cl.getGroup(msg.to)
-                              gs = ki.getGroup(msg.to)
-                              gs = kk.getGroup(msg.to)
-                              gs = kc.getGroup(msg.to)
-                              gs = km.getGroup(msg.to)
-                              gs = kb.getGroup(msg.to)
+                              gs = cl.getGroup(msg.to)
+                              gs = cl.getGroup(msg.to)
                               targets = []
                               for g in gs.members:
                                  if _name in g.displayName:
@@ -4156,7 +4231,7 @@ def bot(op):
                                   for target in targets:
                                    if not target in admin and Bots:
                                       try:
-                                          klist=[cl,ki,kk,kc,km,kb]
+                                          klist=[cl]
                                           kicker=random.choice(klist)
                                           kicker.kickoutFromGroup(msg.to,[target])
                                           print (msg.to,[g.mid])
