@@ -4247,7 +4247,7 @@ def bot(op):
                                 if msg.toType == 2:
                                     gs = cl.getGroup(msg.to)
                                 gs.preventedJoinByTicket = False
-                                aditmadzs.updateGroup(gs)
+                                cl.updateGroup(gs)
                                 invsend = 0
                                 Ticket = cl.reissueGroupTicket(msg.to)
                                 cl.acceptGroupInvitationByTicket(msg.to,Ticket)
