@@ -943,10 +943,10 @@ def bot(op):
                 if op.param1 in protectantijs:
                   if op.param3 in mid:
                     if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
-                        js.acceptGroupInvitation(op.param1)
+                        sw.acceptGroupInvitation(op.param1)
                         G = sw.getGroup(op.param1)
                         G.prevenJoinByTicket = False
-                        js.updateGroup(G)
+                        sw.updateGroup(G)
                         Ticket = sw.reissueGroupTicket(op.param1)
                         random.choice(KAC).acceptGroupInvitationByTicket(op.param1,Ticket)
                         sw.kickoutFromGroup(op.param1,[op.param2])
