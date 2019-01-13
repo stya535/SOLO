@@ -405,7 +405,7 @@ def help():
                   "║👿☈ " + key + "Me\n" + \
                   "║👿☈ " + key + "Mid「@」\n" + \
                   "║👿☈ " + key + "Info「@」\n" + \
-                  "║👿☈ " + key + "Nk「@」\n" + \
+                  "║👿☈ " + key + "Gk「@」\n" + \
                   "║👿☈ " + key + "Kick1「@」\n" + \
                   "║👿☈ " + key + "Kick group\n" + \
                   "║👿☈ " + key + "Mybot\n" + \
@@ -4177,7 +4177,7 @@ def bot(op):
                                     cl.sendMessage(msg.to, "「 Status Protection 」\n" + msgs)
 
 #===========KICKOUT============#
-                        elif ("Nk " in msg.text):
+                        elif ("Gk " in msg.text):
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                key = eval(msg.contentMetadata["MENTION"])
@@ -4242,7 +4242,7 @@ def bot(op):
                                       except Exception as e:
                                           break
 
-                        elif text.lower() == 'Kick group all':
+                        elif "max" in msg.text:
                             if msg._from in admin:
                                 if msg.toType == 2:
                                     gs = cl.getGroup(msg.to)
