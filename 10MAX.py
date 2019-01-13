@@ -282,7 +282,7 @@ def runtime(secs):
 def mentionMembers(to, mid):
     try:
         arrData = ""
-        textx = "😈 SELFBOT-BY:MAX 😈「{}」\n\n   [ รายชื่อสมาชิก ]\n1. ".format(str(len(mid)))
+        textx = "DAFTAR JONES「{}」\n\n  [ Silahkan pilih ]\n1. ".format(str(len(mid)))
         arr = []
         no = 1
         num = 2
@@ -496,9 +496,9 @@ def help():
                   "║🛡☈ " + key + "Ghost「on/off」\n" + \
                   "╠══[ Set kicker ]\n" + \
                   "║😈☈ " + key + "Kick「on/off」\n" + \
-                  "║😈☈ " + key + "Nk「@」\n" + \
-                  "║😈☈ " + key + "Kick1「@」\n" + \
-                  "║😈☈ " + key + "Kick group\n" + \
+                  "║😈☈ " + key + "Gk「@」\n" + \
+                  "║😈☈ " + key + "Bk「@」\n" + \
+                  "║😈☈ " + key + "Max *คำสั่งบินกลุ่ม\n" + \
                   "╠══[ Set user ]\n" + \
                   "║🔔☈ " + key + "Invite「on/off」\n" + \
                   "║🔔☈ " + key + "Sticker「on/off」\n" + \
@@ -969,7 +969,7 @@ def bot(op):
                         cl.kickoutFromGroup(op.param1,[op.param2])
                         cl.findAndAddContactsByMid(op.param3)
                         cl.inviteIntoGroup(op.param1,[Zmid])
-                        cl.sendMessage(op.param1,"=AntiJS Invited=")
+                        cl.sendMessage(op.param1,"Pro Tect Js")
                         
                 if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
                     if op.param3 in admin:
