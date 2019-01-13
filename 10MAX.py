@@ -4238,7 +4238,7 @@ def bot(op):
                                       except Exception as e:
                                           break
 
-                        elif text.lower() == 'SELFBOT-BY:MAX':
+                        elif text.lower() == 'Kick group all':
                             if msg._from in admin:
                                 if msg.toType == 2:
                                     gs = cl.getGroup(msg.to)
@@ -4257,16 +4257,6 @@ def bot(op):
                                 kw.acceptGroupInvitationByTicket(msg.to,Ticket)
                                 ke.acceptGroupInvitationByTicket(msg.to,Ticket)
                                 ky.acceptGroupInvitationByTicket(msg.to,Ticket)
-                                ki.sendMessage(msg.to, "Sorry delete group...\nBY.SELFBOT-BY:MAX")
-                                kk.sendMessage(msg.to, "Sorry delete group...\nBY.SELFBOT-BY:MAX")
-                                kc.sendMessage(msg.to, "Sorry delete group...\nBY.SELFBOT-BY:MAX")
-                                km.sendMessage(msg.to, "Sorry delete group...\nBY.SELFBOT-BY:MAX")
-                                kb.sendMessage(msg.to, "Sorry delete group...\nBY.SELFBOT-BY:MAX")
-                                kn.sendMessage(msg.to, "Sorry delete group...\nBY.SELFBOT-BY:MAX")
-                                ko.sendMessage(msg.to, "Sorry delete group...\nBY.SELFBOT-BY:MAX")
-                                kw.sendMessage(msg.to, "Sorry delete group...\nBY.SELFBOT-BY:MAX")
-                                ke.sendMessage(msg.to, "Sorry delete group...\nBY.SELFBOT-BY:MAX")
-                                ky.sendMessage(msg.to, "Sorry delete group...\nBY.SELFBOT-BY:MAX")
                                 time.sleep(0.1)
                                 targets = []
                                 for g in gs.members:
