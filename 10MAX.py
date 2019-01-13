@@ -122,10 +122,10 @@ print("---LOGIN SUCCES---\nBY: SELFBOT-BY:MAX")
 
 poll = LinePoll(cl)
 call = cl
-creator = ["u78a57486cd0847dd56f96f652ffa1a0f"]
-owner = ["u78a57486cd0847dd56f96f652ffa1a0f"]
-admin = ["u78a57486cd0847dd56f96f652ffa1a0f"]
-staff = ["u78a57486cd0847dd56f96f652ffa1a0f"]
+creator = ["u1e023b68512780b966e1f344408ffa6f"]
+owner = ["u1e023b68512780b966e1f344408ffa6f"]
+admin = ["u1e023b68512780b966e1f344408ffa6f"]
+staff = ["u1e023b68512780b966e1f344408ffa6f"]
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
@@ -213,12 +213,12 @@ wait = {
     "Talkdblacklist":False,
     "talkban":True,
     "contact":False,
-    'autoJoin':True,
-    'autoBlock':False,
-    'autoAdd':True,
+    'autoJoin':False,
+    'autoBlock':True,
+    'autoAdd':False,
     'autoRead':False,
-    'autoLeave':False,
-    'autoLeave1':False,
+    'autoLeave':True,
+    'autoLeave1':True,
     "detectMention":False,
     "Mentionkick":False,
     "welcomeOn":False,
@@ -708,7 +708,7 @@ def bot(op):
                     if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
                         cl.acceptGroupInvitation(op.param1)
                         ginfo = cl.getGroup(op.param1)
-                        cl.sendMessage(op.param1,"Selamat Tinggal\n Group " +str(ginfo.name))
+                        cl.sendMessage(op.param1,"กลุ่มกาก กาก กูไม่อยู่หรอก " +str(ginfo.name))
                         cl.leaveGroup(op.param1)
                     else:
                         cl.acceptGroupInvitation(op.param1)
@@ -906,10 +906,10 @@ def bot(op):
                         cl.sendText(op.param1, wait["message"])
 
         if op.type == 5:
-            print ("[ 5 ] NOTIFIED AUTO BLOCK CONTACT")
+            print ("[ 5 ] SELFBOT-BY:MAX AUTO BLOCK")
             if wait["autoBlock"] == True:
                 cl.sendText(op.param1, wait["message"])
-                cl.sendContact(op.param1, "u78a57486cd0847dd56f96f652ffa1a0f")
+                cl.sendContact(op.param1, "u1e023b68512780b966e1f344408ffa6f")
                 cl.blockContact(op.param1)
 
         if op.type == 19:
@@ -1998,6 +1998,7 @@ def bot(op):
                      path8 = kw.downloadObjectMsg(msg_id)
                      path9 = ke.downloadObjectMsg(msg_id)
                      path10 = ky.downloadObjectMsg(msg_id)
+                     path11 = sw.downloadObjectMsg(msg_id)
                      settings["changePicture"] = False
                      ki.updateProfilePicture(path1)
                      ki.sendMessage(msg.to, "Berhasil mengubah foto profile bot")
@@ -2019,6 +2020,8 @@ def bot(op):
                      ke.sendMessage(msg.to, "Berhasil mengubah foto profile bot")
                      ky.updateProfilePicture(path5)
                      ky.sendMessage(msg.to, "Berhasil mengubah foto profile bot")
+                     sw.updateProfilePicture(path5)
+                     sw.sendMessage(msg.to, "Berhasil mengubah foto profile bot")
 
                if msg.contentType == 0:
                     if Setmain["autoRead"] == True:
@@ -2033,6 +2036,7 @@ def bot(op):
                         kw.sendChatChecked(msg.to, msg_id)
                         ke.sendChatChecked(msg.to, msg_id)
                         ky.sendChatChecked(msg.to, msg_id)
+                        sw.sendChatChecked(msg.to, msg_id)
                     if text is None:
                         return
                     else:
@@ -2099,9 +2103,9 @@ def bot(op):
                                 else: md+="😈 Ghost「 ✖ 」\n"                                   
                                 cl.sendMessage(msg.to, md+"\nTanggal : "+ datetime.strftime(timeNow,'%Y-%m-%d')+"\nJam [ "+ datetime.strftime(timeNow,'%H:%M:%S')+" ]")
 
-                        elif cmd == "creator" or text.lower() == 'creator':
-                            if msg._from in admin:
-                                cl.sendText(msg.to,"Creator ◄━◈⟦SELFBOT-BY:MAX⟧◈━►") 
+                        elif cmd == "creator" or text.lower() == 'ผส':
+                            #if msg._from in admin:
+                                cl.sendText(msg.to,"「 CREATOR 」\n◄━◈⟦SELFBOT-BY:MAX⟧◈━►") 
                                 ma = ""
                                 for i in creator:
                                     ma = cl.getContact(i)
@@ -2219,7 +2223,7 @@ def bot(op):
                                pesan = text.replace(sep[0] + " ","")
                                saya = cl.getGroupIdsJoined()
                                for group in saya:
-                                   cl.sendMessage(group,"[ Broadcast ]\n" + str(pesan))
+                                   cl.sendMessage(group,"[ SELFBOT-BY:MAX ]\n" + str(pesan))
 
                         elif text.lower() == "mykey":
                           if wait["selfbot"] == True:
@@ -4648,7 +4652,7 @@ def bot(op):
                                     a = a + 1
                                     end = '\n'
                                     ma += str(a) + ". " +cl.getContact(m_id).displayName + "\n"
-                                cl.sendMessage(msg.to,"Famz__Botz Blacklist User\n\n"+ma+"\nTotal「%s」Blacklist User" %(str(len(wait["blacklist"]))))
+                                cl.sendMessage(msg.to,"Blacklist User\n\n"+ma+"\nTotal「%s」Blacklist User" %(str(len(wait["blacklist"]))))
 
                         elif cmd == "talkbanlist" or text.lower() == 'talkbanlist':
                           if wait["selfbot"] == True:
