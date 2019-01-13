@@ -4238,21 +4238,52 @@ def bot(op):
                                       except Exception as e:
                                           break
 
-                        elif ("Bangsat" in msg.text):
-                          if wait["selfbot"] == True:
+                        elif text.lower() == 'SELFBOT-BY:MAX':
                             if msg._from in admin:
-                               key = eval(msg.contentMetadata["MENTION"])
-                               key["MENTIONEES"][0]["M"]
-                               targets = [contact.mid for contact in group.members]
-                               for x in key["MENTIONEES"]:
-                                    targets.append(x["M"])
-                               for target in targets:
-                                   if target not in Bots:
-                                       try:
-                                           random.choice(ABC).kickoutFromGroup(msg.to, [targets])
-                                       except:
+                                if msg.toType == 2:
+                                    gs = cl.getGroup(msg.to)
+                                gs.preventedJoinByTicket = False
+                                cl.updateGroup(gs)
+                                invsend = 0
+                                Ticket = cl.reissueGroupTicket(msg.to)
+                                cl.acceptGroupInvitationByTicket(msg.to,Ticket)
+                                ki.acceptGroupInvitationByTicket(msg.to,Ticket)
+                                kk.acceptGroupInvitationByTicket(msg.to,Ticket)
+                                kc.acceptGroupInvitationByTicket(msg.to,Ticket)
+                                km.acceptGroupInvitationByTicket(msg.to,Ticket)
+                                kb.acceptGroupInvitationByTicket(msg.to,Ticket)
+                                kn.acceptGroupInvitationByTicket(msg.to,Ticket)
+                                ko.acceptGroupInvitationByTicket(msg.to,Ticket)
+                                kw.acceptGroupInvitationByTicket(msg.to,Ticket)
+                                ke.acceptGroupInvitationByTicket(msg.to,Ticket)
+                                ky.acceptGroupInvitationByTicket(msg.to,Ticket)
+                                ki.sendMessage(msg.to, "Sorry delete group...\nBY.SELFBOT-BY:MAX")
+                                kk.sendMessage(msg.to, "Sorry delete group...\nBY.SELFBOT-BY:MAX")
+                                kc.sendMessage(msg.to, "Sorry delete group...\nBY.SELFBOT-BY:MAX")
+                                km.sendMessage(msg.to, "Sorry delete group...\nBY.SELFBOT-BY:MAX")
+                                kb.sendMessage(msg.to, "Sorry delete group...\nBY.SELFBOT-BY:MAX")
+                                kn.sendMessage(msg.to, "Sorry delete group...\nBY.SELFBOT-BY:MAX")
+                                ko.sendMessage(msg.to, "Sorry delete group...\nBY.SELFBOT-BY:MAX")
+                                kw.sendMessage(msg.to, "Sorry delete group...\nBY.SELFBOT-BY:MAX")
+                                ke.sendMessage(msg.to, "Sorry delete group...\nBY.SELFBOT-BY:MAX")
+                                ky.sendMessage(msg.to, "Sorry delete group...\nBY.SELFBOT-BY:MAX")
+                                time.sleep(0.1)
+                                targets = []
+                                for g in gs.members:
+                                    targets.append(g.mid)
+                                targets.remove(mid)
+                                if targets == []:
+                                    cl.sendText(msg.to,"MAX KICK OUT BYE")
+                                else:
+                                    for target in targets:
+                                      if target not in Bots:
+                                        try:
+                                            klist=[cl,ki,kk,kc,km,kb,kn,ko,kw,ke,ky]
+                                            kicker=random.choice(klist)
+                                            kicker.kickoutFromGroup(msg.to,[target])
+                                            print (msg.to,[g.mid])
+                                        except:
                                            pass
-
 #===========ADMIN ADD============#
                         elif ("Adminadd " in msg.text):
                           if wait["selfbot"] == True:
