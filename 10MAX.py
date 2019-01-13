@@ -168,7 +168,7 @@ settings = {
     "group":{},
     "groupPicture":False,
     "changePicture":False,
-    "autoJoinTicket":False,
+    "autoJoinTicket":True,
     "userAgent": [
         "Mozilla/5.0 (X11; U; Linux i586; de; rv:5.0) Gecko/20100101 Firefox/5.0",
         "Mozilla/5.0 (X11; U; Linux amd64; rv:5.0) Gecko/20100101 Firefox/5.0 (Debian)",
@@ -282,7 +282,7 @@ def runtime(secs):
 def mentionMembers(to, mid):
     try:
         arrData = ""
-        textx = "😈 SELFBOT-BY:MAX 😈「{}」\n\n  [ Silahkan pilih ]\n1. ".format(str(len(mid)))
+        textx = "😈 SELFBOT-BY:MAX 😈「{}」\n\n   [ รายชื่อสมาชิก ]\n1. ".format(str(len(mid)))
         arr = []
         no = 1
         num = 2
@@ -382,7 +382,7 @@ def sendMention(to, mid, firstmessage):
         timeNow = datetime.now(tz=tz)
         eltime = time.time() - mulai
         bot = runtime(eltime)
-        text += mention+"◐ Jam : "+datetime.strftime(timeNow,'%H:%M:%S')+" Wib\n⏩ Group : "+str(len(gid))+"\n⏩ Teman : "+str(len(teman))+"\n⏩ Expired : In "+hari+"\n⏩ Version : MAX v10\n⏩ Tanggal : "+datetime.strftime(timeNow,'%Y-%m-%d')+"\n⏩ Runtime : \n • "+bot
+        text += mention+"◐ Jam : "+datetime.strftime(timeNow,'%H:%M:%S')+" Wib\n◐ Group : "+str(len(gid))+"\n◐ Teman : "+str(len(teman))+"\n◐ Expired : In "+hari+"\n◐ Version : MAX v10\n◐ Tanggal : "+datetime.strftime(timeNow,'%Y-%m-%d')+"\n◐ Runtime : \n • "+bot
         cl.sendMessage(to, text, {'MENTION': str('{"MENTIONEES":' + json.dumps(arr) + '}')}, 0)
     except Exception as error:
         cl.sendMessage(to, "[ INFO ] Error :\n" + str(error))
@@ -406,8 +406,8 @@ def help():
                   "║👿☈ " + key + "Mid「@」\n" + \
                   "║👿☈ " + key + "Info「@」\n" + \
                   "║👿☈ " + key + "Gk「@」\n" + \
-                  "║👿☈ " + key + "Kick1「@」\n" + \
-                  "║👿☈ " + key + "Kick group\n" + \
+                  "║👿☈ " + key + "Bk「@」\n" + \
+                  "║👿☈ " + key + "Kickall\n" + \
                   "║👿☈ " + key + "Mybot\n" + \
                   "║👿☈ " + key + "Status\n" + \
                   "║👿☈ " + key + "About\n" + \
@@ -4202,7 +4202,7 @@ def bot(op):
                                        except:
                                            pass
 
-                        elif ("Kick1 " in msg.text):
+                        elif ("Bk " in msg.text):
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                key = eval(msg.contentMetadata["MENTION"])
@@ -4217,11 +4217,11 @@ def bot(op):
                                        except:
                                            pass
 #KICKALL
-                        elif "Kickgroup" in msg.text:
+                        elif "kickalll" in msg.text:
                           if msg._from in admin:
                            if msg.toType == 2:
                               print("ok")
-                              _name = msg.text.replace("Kickgroup","")
+                              _name = msg.text.replace("kickalll","")
                               gs = cl.getGroup(msg.to)
                               gs = cl.getGroup(msg.to)
                               gs = cl.getGroup(msg.to)
