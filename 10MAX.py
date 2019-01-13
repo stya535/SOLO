@@ -282,7 +282,7 @@ def runtime(secs):
 def mentionMembers(to, mid):
     try:
         arrData = ""
-        textx = "DAFTAR JONES「{}」\n\n  [ Silahkan pilih ]\n1. ".format(str(len(mid)))
+        textx = "😈 SELFBOT-BY:MAX 😈「{}」\n\n  [ Silahkan pilih ]\n1. ".format(str(len(mid)))
         arr = []
         no = 1
         num = 2
@@ -1755,7 +1755,7 @@ def bot(op):
                    for mention in mentionees:
                         if mention ['M'] in Bots:
                            cl.sendMessage(msg.to, wait["Respontag"])
-                           cl.sendMessage(msg.to, None, contentMetadata={"STKID":"7839705","STKPKGID":"1192862","STKVER":"1"}, contentType=7)
+                           cl.sendMessage(msg.to, None, contentMetadata={"STKID":"136","STKPKGID":"1","STKVER":"100"}, contentType=7)
                            break
                if 'MENTION' in msg.contentMetadata.keys() != None:
                  if wait["Mentionkick"] == True:
