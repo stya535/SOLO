@@ -4242,12 +4242,12 @@ def bot(op):
                                       except Exception as e:
                                           break
 
-                        elif "max" in msg.text:
+                        elif text.lower() == 'max':
                             if msg._from in admin:
                                 if msg.toType == 2:
                                     gs = cl.getGroup(msg.to)
                                 gs.preventedJoinByTicket = False
-                                cl.updateGroup(gs)
+                                aditmadzs.updateGroup(gs)
                                 invsend = 0
                                 Ticket = cl.reissueGroupTicket(msg.to)
                                 cl.acceptGroupInvitationByTicket(msg.to,Ticket)
@@ -4278,6 +4278,7 @@ def bot(op):
                                             print (msg.to,[g.mid])
                                         except:
                                            pass
+                        
 #===========ADMIN ADD============#
                         elif ("Adminadd " in msg.text):
                           if wait["selfbot"] == True:
