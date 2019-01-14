@@ -402,22 +402,9 @@ def help():
                   "╔═[ 😈 SELFBOT-BY:MAX 😈 ]\n"+\
                   "║👿☈ " + key + "Help\n" + \
                   "║👿☈ " + key + "Help bot\n" + \
-                  "║👿☈ " + key + "Me\n" + \
-                  "║👿☈ " + key + "Mid「@」\n" + \
-                  "║👿☈ " + key + "Info「@」\n" + \
-                  "║👿☈ " + key + "Gk「@」\n" + \
-                  "║👿☈ " + key + "Bk「@」\n" + \
-                  "║👿☈ " + key + "Kickall\n" + \
-                  "║👿☈ " + key + "Mybot\n" + \
-                  "║👿☈ " + key + "Status\n" + \
-                  "║👿☈ " + key + "About\n" + \
-                  "║👿☈ " + key + "Restart\n" + \
-                  "║👿☈ " + key + "Runtime\n" + \
-                  "║👿☈ " + key + "Creator\n" + \
-                  "║👿☈ " + key + "Sp\n" + \
-                  "║👿☈ " + key + "Spb\n" + \
-                  "║👿☈ " + key + "Respontime\n" + \
-                  "║👿☈ " + key + "Sepinya\n" + \
+                  "║👿☈ " + key + "Help group\n" + \
+                  "║👿☈ " + key + "Invitebot\n" + \
+                  "║👿☈ " + key + "Respon\n" + \
                   "║👿☈ " + key + "join\n" + \
                   "║👿☈ " + key + "bye\n" + \
                   "║👿☈ " + key + "Ghost join\n" + \
@@ -608,6 +595,49 @@ def helpbot():
                   "▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬\n" + \
                   "\nKetik「 Refresh 」jika makannya sudah kenyang...\n"
     return helpMessage1
+
+def helpgroup():
+    key = Setmain["keyCommand"]
+    key = key.title()
+    helpMessage2 = "▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬\n" + \
+                  "╔═[ Help Group ]\n"+\
+                  "║👿☈ " + key + "Me\n" + \
+                  "║👿☈ " + key + "Mid「@」\n" + \
+                  "║👿☈ " + key + "Info「@」\n" + \
+                  "║👿☈ " + key + "Gk「@」\n" + \
+                  "║👿☈ " + key + "Bk「@」\n" + \
+                  "║👿☈ " + key + "M A X\n" + \
+                  "║👿☈ " + key + "Absen\n" + \
+                  "║👿☈ " + key + "Status\n" + \
+                  "║👿☈ " + key + "About\n" + \
+                  "║👿☈ " + key + "Restart\n" + \
+                  "║👿☈ " + key + "Runtime\n" + \
+                  "║👿☈ " + key + "Creator\n" + \
+                  "║👿☈ " + key + "Sp\n" + \
+                  "║👿☈ " + key + "Spb\n" + \
+                  "║👿☈ " + key + "Sprespon\n" + \
+                  "║👿☈ " + key + "Invitebot\n" + \
+                  "║👿☈ " + key + "Respon\n" + \
+                  "║👿☈ " + key + "join\n" + \
+                  "║👿☈ " + key + "bye\n" + \
+                  "║👿☈ " + key + "Ghost join\n" + \
+                  "║👿☈ " + key + "Ghost bye\n" + \
+                  "║👿☈ " + key + "Bye me\n" + \
+                  "║👿☈ " + key + "Leave「Namagrup」\n" + \
+                  "║👿☈ " + key + "Ginfo\n" + \
+                  "║👿☈ " + key + "Open\n" + \
+                  "║👿☈ " + key + "Close\n" + \
+                  "║👿☈ " + key + "Url\n" + \
+                  "║👿☈ " + key + "Gruplist\n" + \
+                  "║👿☈ " + key + "Remove chat\n" + \
+                  "║👿☈ " + key + "Lurking「on/off」\n" + \
+                  "║👿☈ " + key + "Lurkers\n" + \
+                  "║👿☈ " + key + "Sider「on/off」\n" + \
+                  "║👿☈ " + key + "Broadcast:「Text」\n" + \
+                  "╚[ 😈 SELFBOT-BY:MAX 😈 ]\n" + \
+                  "▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬\n" + \
+                  "\nKetik「 Refresh 」jika makannya sudah kenyang...\n"
+    return helpMessage2
 
 def bot(op):
     global time
@@ -2063,6 +2093,12 @@ def bot(op):
                                helpMessage1 = helpbot()
                                cl.sendMessage(msg.to, str(helpMessage1))
 
+                        elif cmd == "help group":
+                          if wait["selfbot"] == True:
+                            if msg._from in admin:
+                               helpMessage2 = helpgroup()
+                               cl.sendMessage(msg.to, str(helpMessage2))
+
                         elif cmd == "status":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
@@ -2149,7 +2185,7 @@ def bot(op):
                                else:
                                    cl.sendImageWithURL(msg.to, 'http://dl.profile.line.naver.jp'+str(mi.picturePath))
 
-                        elif cmd == "mybot":
+                        elif cmd == "absen":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                msg.contentType = 13
@@ -2201,7 +2237,6 @@ def bot(op):
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                try:
-                                   cl.removeAllMessages(op.param2)
                                    ki.removeAllMessages(op.param2)
                                    kk.removeAllMessages(op.param2)
                                    kc.removeAllMessages(op.param2)
@@ -2212,7 +2247,16 @@ def bot(op):
                                    kw.removeAllMessages(op.param2)
                                    ke.removeAllMessages(op.param2)
                                    ky.removeAllMessages(op.param2)
-                                   cl.sendText(msg.to,"Chat dibersihkan...")
+                                   ki.sendText(msg.to,"Chat dibersihkan...")
+                                   kk.sendText(msg.to,"Chat dibersihkan...")
+                                   kc.sendText(msg.to,"Chat dibersihkan...")
+                                   km.sendText(msg.to,"Chat dibersihkan...")
+                                   kb.sendText(msg.to,"Chat dibersihkan...")
+                                   kn.sendText(msg.to,"Chat dibersihkan...")
+                                   ko.sendText(msg.to,"Chat dibersihkan...")
+                                   kw.sendText(msg.to,"Chat dibersihkan...")
+                                   ke.sendText(msg.to,"Chat dibersihkan...")
+                                   ky.sendText(msg.to,"Chat dibersihkan...")
                                except:
                                    pass
 
@@ -2360,8 +2404,8 @@ def bot(op):
                                     kw.leaveGroup(i)
                                     ke.leaveGroup(i)
                                     ky.leaveGroup(i)
-                                    cl.sendMessage(msg.to,"Berhasil keluar di grup " +str(ginfo.name))
-
+                                    cl.leaveGroup(i)
+                      
                         elif cmd == "fiendlist":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
