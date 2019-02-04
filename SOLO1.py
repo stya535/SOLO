@@ -22,7 +22,7 @@ from googletrans import Translator
 import youtube_dl
 #GUNAKAN BOT DENGAN BIJAK,,,SALAM SANTUN
 
-cl = LineClient(
+cl = LineClient("wahyutok1295@gmail.com","sentolang123")
 cl.log("Auth Token : " + str(cl.authToken))
 channel = LineChannel(cl)
 cl.log("Channel Access Token : " + str(channel.channelAccessToken))
