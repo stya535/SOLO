@@ -28,48 +28,42 @@ cl.log("Auth Token : " + str(cl.authToken))
 channel1 = LineChannel(cl,cl.server.CHANNEL_ID['LINE_TIMELINE'])
 cl.log("Channel Access Token : " + str(channel1.channelAccessToken))
 
-req= requests.get("https://api.eater.pw/virtual?header=CHROMEOS&id=")#ganti asddsa dengan id kalian
-token = req.text
+
 ki = LineClient("email","sandi)
 ki.log("Auth Token : " + str(ki.authToken))
 channel1 = LineChannel(ki,ki.server.CHANNEL_ID['LINE_TIMELINE'])
 ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
 
-req= requests.get("https://api.eater.pw/virtual?header=CHROMEOS&id=")#ganti asddsa dengan id kalian
-token = req.text
+
 kk = LineClient("email","sandi")
 kk.log("Auth Token : " + str(kk.authToken))
 channel2 = LineChannel(kk)
 kk.log("Channel Access Token : " + str(channel2.channelAccessToken))
 
-req= requests.get("https://api.eater.pw/virtual?header=CHROMEOS&id=")#ganti asddsa dengan id kalian
-token = req.text
+
 kc = LineClient("email","sandi")
 kc.log("Auth Token : " + str(kc.authToken))
 channel3 = LineChannel(kc)
 kc.log("Channel Access Token : " + str(channel3.channelAccessToken))
 
-req= requests.get("https://api.eater.pw/virtual?header=CHROMEOS&id=")#ganti asddsa dengan id kalian
-token = req.text
+
 kb = LineClient("email","sandi")
 kb.log("Auth Token : " + str(kb.authToken))
 channel4 = LineChannel(kb)
 kb.log("Channel Access Token : " + str(channel3.channelAccessToken))
 
-req= requests.get("https://api.eater.pw/virtual?header=CHROMEOS&id=")#ganti asddsa dengan id kalian
-token = req.text
+
 kd = LineClient("email","sandi")
 kd.log("Auth Token : " + str(kd.authToken))
 channel5 = LineChannel(kd)
 kd.log("Channel Access Token : " + str(channel5.channelAccessToken))
 
-req= requests.get("https://api.eater.pw/virtual?header=CHROMEOS&id=")#ganti asddsa dengan id kalian
-token = req.text
+
 sw = LineClient("email","sandi")
 sw.log("Auth Token : " + str(sw.authToken))
 channel11 = LineChannel(sw)
 sw.log("Channel Access Token : " + str(channel11.channelAccessToken))
-print("---LOGIN SUCCES BOSS---")
+print("---LOGIN SUCCES BOSS- SELFBOT SOLO")
 poll = LinePoll(cl)
 call = cl
 creator = ["uf50d888821632d32461e37153ac775c0"]
@@ -485,7 +479,7 @@ def help():
                   "「🔑]  " + key + "Antijs stay\n" + \
                   "「🔑]  " + key + "Ghost in\n" + \
                   "「🔑]  " + key + "Ghost out\n" + \
-                  "「🔑]  " + key + "!sadis\n" + \
+                  "「??]  " + key + "!sadis\n" + \
                   "「🔑]  " + key + "Sd.reinvite\n" + \
                   "「🔑]  " + key + "Blc\n" + \
                   "「🔑]  " + key + "Clearban\n" + \
