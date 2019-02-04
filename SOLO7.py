@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*- 
-import DRAGON
-from DRAGON import *
-from dkbot.ttypes import *
+import KIA
+from KIA import *
+from akad.ttypes import *
 from thrift.unverting import *
 from thrift.TMultiplexedProcessor import *
 from thrift.TSerialization import *
