@@ -426,7 +426,7 @@ def help():
                    "🔑❂͜͡➣" + key + "ʀᴇsᴇᴛᴋᴇʏ\n" + \
                   "🔑❂͜͡➣ " + key + "ʀᴇғʀᴇsʜ\n" + \
                   "🔑❂͜͡➣ " + key + "Restart\n"+ \
-                  "🔑❂͜͡➣ [[DKBOT-LINE]]"
+                  "🔑❂͜͡➣ [[SADIS_BOTS]]"
 
     return helpMessage
 
@@ -3019,7 +3019,7 @@ def bot(op):
 
                         elif cmd == "kibar":
                           if wait["selfbot"] == True:
-                            if msg._from in admin
+                      #      if msg._from in admin
                                cl.sendContact(to, mid)
                                cl.sendMessage(msg.to, "█░░╦─╦╔╗╦─╔╗╔╗╔╦╗╔╗░░█\n█░░║║║╠─║─║─║║║║║╠─░░█\n█░░╚╩╝╚╝╚╝╚╝╚╝╩─╩╚╝░░█\n"
  "ASSALAMUALAIKUM\n"
