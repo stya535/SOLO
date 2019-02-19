@@ -13,7 +13,7 @@ from time import sleep
 import time, random, sys, json, codecs, threading, glob, re, string, os, requests, subprocess, six, ast, pytz, urllib.request, urllib.parse, urllib.error, urllib.parse
 from datetime import timedelta, date
 from datetime import datetime
-from gtts import gTTS
+#from gtts import gTTS
 import html5lib,shutil
 import wikipedia,goslate
 import ffmpy
@@ -21,19 +21,19 @@ from bs4 import BeautifulSoup
 from googletrans import Translator
 import youtube_dl
 #GUNAKAN BOT DENGAN BIJAK,,,SALAM SANTUN
-
-cl = LineClient("wahyutok1295@gmail.com","sentolang123")
+#CUKUP GANTI EMAIL&PASWOD KALIAN
+cl = LineClient("EMAIL","PASWOD") 
 cl.log("Auth Token : " + str(cl.authToken))
 channel = LineChannel(cl)
 cl.log("Channel Access Token : " + str(channel.channelAccessToken))
-print("\nSADIS BOTS SUKCESS LOGIN.....\n")
+print("\nTERX-BOTS-SADIS SUKCESS LOGIN.....\n")
 
 poll = LinePoll(cl)
 call = cl
-creator = ["u56be6a26ffe231838fa5f312c00fd703"]
-owner = ["u56be6a26ffe231838fa5f312c00fd703"]
-admin = ["u56be6a26ffe231838fa5f312c00fd703"]
-staff = ["u56be6a26ffe231838fa5f312c00fd703"]
+creator = ["uf50d888821632d32461e37153ac775c0"]
+owner = ["uf50d888821632d32461e37153ac775c0"]
+admin = ["uf50d888821632d32461e37153ac775c0"]
+staff = ["uf50d888821632d32461e37153ac775c0"]
 lineProfile = cl.getProfile()
 mid = cl.getProfile().mid
 KAC = [cl]
@@ -150,8 +150,8 @@ wait = {
     "Respontag":"Ngetag lagi kangen ya",
     "welcome":"รεℓαɱαт ∂αтαɳɠ \nɓµ∂αყαҡαɳ ૮εҡ ɳσтε.\nรεɱoga jadi kawan baik\namin",
     "leave":"Slamat tinggal sobat\nsmoga ktmu di lain hari nanti",
-    "comment":" ──────┅┅──────\nOPEN ORDER\n────────┅┅───────\n➣ꜱᴇʟꜰʙᴏᴛ ᴏɴʟʏ\n➣ꜱᴇʟꜰʙᴏᴛ + ᴀꜱɪꜱᴛ\n➣1 ᴀᴋᴜɴ ᴜᴛᴀᴍᴀ\n➣1 ᴀᴋᴜɴ ᴜᴛᴀᴍᴀ + 2 ᴀꜱɪꜱᴛ\n➣1 ᴀᴋᴜɴ ᴜᴛᴀᴍᴀ + 3 ᴀꜱɪꜱᴛ\n➣1 ᴀᴋᴜɴ ᴜᴛᴀᴍᴀ + 4 ᴀꜱɪꜱᴛ\n➣1 ᴀᴋᴜɴ ᴜᴛᴀᴍᴀ + 5 ᴀꜱɪꜱᴛ\n➣ʙᴏᴛᴘʀᴏᴛᴇᴄᴛ 3-11 ʙᴏᴛ ᴀꜱɪꜱᴛ\n➣ɴᴇᴡ ꜱᴄʀɪᴘᴛ\n─────────┅┅─────────\n  ✯✯\nline.me/ti/p/~gerhanaselatan\nline.me/ti/p/~gerhanaselatan\n➣ѕєʟғвот κɪcκєʀ_+_ᴘʀᴏᴛᴇᴄᴛ\n──────────────",
-    "message":"Terimɑ Kɑsih yɑ....\nUdɑh Menɑmbɑhkɑn Sɑyɑ Sebɑgɑi Temɑn ɑndɑ.\nSalam santun.\n\nвστ вy:Sadis",
+    "comment":" ──────┅┅──────\nOPEN ORDER\n────────┅┅───────\n➣ꜱᴇʟꜰʙᴏᴛ ᴏɴʟʏ\n➣ꜱᴇʟꜰʙᴏᴛ + ᴀꜱɪꜱᴛ\n➣1 ᴀᴋᴜɴ ᴜᴛᴀᴍᴀ\n➣1 ᴀᴋᴜɴ ᴜᴛᴀᴍᴀ + 2 ᴀꜱɪꜱᴛ\n➣1 ᴀᴋᴜɴ ᴜᴛᴀᴍᴀ + 3 ᴀꜱɪꜱᴛ\n➣1 ᴀᴋᴜɴ ᴜᴛᴀᴍᴀ + 4 ᴀꜱɪꜱᴛ\n➣1 ᴀᴋᴜɴ ᴜᴛᴀᴍᴀ + 5 ᴀꜱɪꜱᴛ\n➣ʙᴏᴛᴘʀᴏᴛᴇᴄᴛ 3-11 ʙᴏᴛ ᴀꜱɪꜱᴛ\n➣ɴᴇᴡ ꜱᴄʀɪᴘᴛ\n─────────┅┅─────────\n  ✯✯\nline.me/ti/p/~gerhanaselatan\nline.me/ti/p/~cyberbot11\n➣ѕєʟғвот κɪcκєʀ_+_ᴘʀᴏᴛᴇᴄᴛ\n──────────────",
+    "message":"Terimɑ Kɑsih yɑ....\nUdɑh Menɑmbɑhkɑn Sɑyɑ Sebɑgɑi Temɑn ɑndɑ.\nSalam santun.\n\nвστ вy:Teguh",
 }
 read = {
     "readPoint":{},
@@ -171,15 +171,12 @@ coverId = {}
 wait["myProfile"]["displayName"] = lineProfile.displayName
 wait["myProfile"]["statusMessage"] = lineProfile.statusMessage
 wait["myProfile"]["pictureStatus"] = lineProfile.pictureStatus
-#wait["myProfile"]["coverId"] = lineProfile.getProfileId
 
 lineProfile = cl.getProfile()
 backup = cl.getProfile()
 backup.displayName = lineProfile.displayName
 backup.statusMessage = lineProfile.statusMessage
 backup.pictureStatus = lineProfile.pictureStatus
-#backup.coverld = lineProfile.coverld
-#backup.coverId = lineProfile.getProfileDetail
 
 with open('creator.json', 'r') as fp:
      creator = json.load(fp)
@@ -272,7 +269,7 @@ def siderMembers(to, mid):
 def welcomeMembers(to, mid):
     try:
         arrData = ""
-        textx = "「 Auto Welcome 」\nɦαℓℓσ.......  ".format(str(len(mid)))
+        textx = "「 Auto Welcome 」\nHalooo.......  ".format(str(len(mid)))
         arr = []
         no = 1
         num = 2
@@ -404,7 +401,7 @@ def atend():
 def help():
     key = Setmain["keyCommand"]
     key = key.title()
-    helpMessage = "🔑❂͜͡➣ " + key + " [SADIS_BOTS]\n" + \
+    helpMessage = "❂͜͡➣ " + key + " [TERX_BOTS]\n" + \
                    "🔑❂͜͡➣" + key + "✰SADIS BOTS✰\n" + \
                   "🔑❂͜͡➣ " + key + "ʜᴇʟᴘ\n" + \
                   "🔑❂͜͡➣ " + key + "ʜᴇʟᴘ1\n" + \
@@ -426,14 +423,14 @@ def help():
                    "🔑❂͜͡➣" + key + "ʀᴇsᴇᴛᴋᴇʏ\n" + \
                   "🔑❂͜͡➣ " + key + "ʀᴇғʀᴇsʜ\n" + \
                   "🔑❂͜͡➣ " + key + "Restart\n"+ \
-                  "🔑❂͜͡➣ [[SADIS_BOTS]]"
+                  "🔑❂͜͡➣ [[TERX_BOTS]]"
 
     return helpMessage
 
 def help1():
     key = Setmain["keyCommand"]
     key = key.title()
-    helpMessage1 = "🔑❂͜͡➣ " + key + " [SADIS BOTS]\n" + \
+    helpMessage1 = "❂͜͡➣ " + key + " [TERX BOTS]\n" + \
                   "🔑❂͜͡➣ " + key + "ᴛᴀɢᴀʟʟ/ɴᴀʜ\n" + \
                   "🔑❂͜͡➣ " + key + "ɢɪɴғᴏ\n" + \
                   "🔑❂͜͡➣ " + key + "ᴏᴘᴇɴ\n" + \
@@ -470,7 +467,7 @@ def help1():
                    "🔑❂͜͡➣ " + key + "ᴜᴘᴅᴀᴛᴇɢʀᴜᴘ\n" + \
                    "🔑❂͜͡➣ " + key + "ɢɪғᴛ:「ᴍɪᴅ ᴋᴏʀʙᴀɴ」「ᴊᴜᴍʟᴀʜ」\n" + \
                    "🔑❂͜͡➣ " + key + "sᴘᴀᴍ:「ᴍɪᴅ ᴋᴏʀʙᴀɴ」「ᴊᴜᴍʟᴀʜ」\n" + \
-                   "「🔑]   ʙʏ: SADIS「🔑] \n" + \
+                   "「🔑]   ʙʏ: TEGUH「🔑] \n" + \
                    "  Creator:  line.me/ti/p/~gerhanaselatan"
                   
     return helpMessage1
@@ -478,7 +475,7 @@ def help1():
 def help2():
     key = Setmain["keyCommand"]
     key = key.title()
-    helpMessage2= "      「✭SETTING SASIS BOTS✭」\n" + \
+    helpMessage2= "      「✭SETTING  BOTS-TETX✭」\n" + \
                   "「🔑」 " + key + "ɪɴᴠɪᴛᴇ「ᴏɴ/ᴏғғ」\n" + \
                   "「🔑」 " + key + "sᴛɪᴄᴋᴇʀ「ᴏɴ/ᴏғғ」\n" + \
                   "「🔑」 " + key + "ᴜɴsᴇɴᴅ「ᴏɴ/ᴏғғ」\n" + \
@@ -503,7 +500,7 @@ def help2():
                   "「🔑] " + key + "sᴇᴛ ʀᴇsᴘᴏɴ:「ᴛᴇxᴛ」\n" + \
                   "「🔑] " + key + "sᴇᴛ ʟᴇᴀᴠᴇ:「ᴛᴇxᴛ」\n" + \
                   "「🔑] " + key + "sᴇᴛ ᴡᴇʟᴄᴏᴍᴇ:「ᴛᴇxᴛ」\n" + \
-                  " [🔑SADIS BOTS\n" + \
+                  " [🔑TERX-BOTS\n" + \
                   "🔑Creator:  line.me/ti/p/~gerhanaselatan"
 
     return helpMessage2
@@ -516,20 +513,20 @@ def help3():
                   "「🔑」 " + key + "Listmp3\n" + \
                   "「🔑」 " + key + "Addmp3「Teks」\n" + \
                   "「🔑」 " + key + "Dellmp3「Teks」\n" + \
-                  "      「✭VIDEO SADIS✭」\n" + \
+                  "      「✭VIDEO TERX✭」\n" + \
                   "「🔑」 " + key + "Listvideo\n" + \
                   "「🔑」 " + key + "Addvideo「Teks」\n" + \
                   "「🔑」 " + key + "Dellvideo「Teks」\n" + \
-                  "      「✭GAMBAR SADIS✭」\n" + \
+                  "      「✭GAMBAR TERX✭」\n" + \
                   "「🔑」 " + key + "Listimage\n" + \
                   "「🔑」 " + key + "Addimg「Teks」\n" + \
                   "「🔑」 " + key + "Dellimg「Teks」\n" + \
-                  "      「✭STICKER SADIS✭」\n" + \
+                  "      「✭STICKER TERX✭」\n" + \
                   "「🔑」 " + key + "Liststicker\n" + \
                   "「🔑」 " + key + "Addsticker「Teks」\n" + \
                   "「🔑」 " + key + "Dellsticker「Teks」\n" + \
                   "「🔑」 " + key + "Kode wilayah\n" + \
-                  "      「✭MEDIA LAIN SADIS✭」\n" + \
+                  "      「✭MEDIA LAIN TERX✭」\n" + \
                   "「🔑」 " + key + "Lihat 「Kode wilayah cctv」\n" + \
                   "「🔑」 " + key + "Youtube「Query」\n" + \
                   "「🔑」 " + key + "Get-fs「Query」\n" + \
@@ -550,7 +547,7 @@ def help3():
                   "「🔑」 " + key + "Get-lirik「Judul Lagu」\n" + \
                   "「🔑」 " + key + "Get-instagram「User Name」\n" + \
                   "「🔑」 " + key + "Get-date「tgl-bln-thn」\n" + \
-                  "「🔑」BY: SADIS\n" + \
+                  "「🔑」BY: TEGUH\n" + \
                   "  Creator:  line.me/ti/p/~gerhanaselatan"
 
     return helpMessage3
@@ -600,7 +597,7 @@ def bot(op):
                   cl.findAndAddContactsByMid(op.param1)
                   sendMention(op.param1, op.param1, "Haii ", ", terimakasih sudah add saya")
                   cl.sendText(op.param1, wait["message"])
-                  cl.sendContact(op.param1, "u56be6a26ffe231838fa5f312c00fd703")
+                  cl.sendContact(op.param1, "uf50d888821632d32461e37153ac775c0")
 
         if op.type == 5:
             print ("[ 5 ] NOTIFIED AUTO BLOCK CONTACT")
@@ -623,7 +620,7 @@ def bot(op):
                                 xpesan =  "「 ɢᴀᴍʙᴀʀ ᴅɪʜᴀᴘᴜs  」\n• ❂➣ ᴘᴇɴɢɪʀɪᴍ : "
                                 ret_ = "• ❂➣ ɴᴀᴍᴀ ɢʀᴜᴘ: {}".format(str(ginfo.name))
                                 ret_ += "\n• ❂➣ ᴡᴀᴋᴛᴜ ɴɢɪʀɪᴍ : {}".format(dt_to_str(cTime_to_datetime(msg_dict[msg_id]["createdTime"])))
-                                ret_ += "\nSADIS ⟗"
+                                ret_ += "\nTERX ⟗"
                                 ret_ += "\nCreator:  line.me/ti/p/~gerhanaselatan" 
                                 ry = str(ryan.displayName)
                                 pesan = ''
@@ -644,7 +641,7 @@ def bot(op):
                                 ret_ += "\n「🔑」ɴᴀᴍᴀ ɢʀᴜᴘ : {}".format(str(ginfo.name))
                                 ret_ += "\n「🔑」ᴡᴀᴋᴛᴜ ɴɢɪʀɪᴍ: {}".format(dt_to_str(cTime_to_datetime(msg_dict[msg_id]["createdTime"])))
                                 ret_ += "\n• ➣ᴘᴇsᴀɴɴʏᴀ : {}".format(str(msg_dict[msg_id]["text"]))
-                                ret_ += "\n 「🔑」Tim SADIS BOT"
+                                ret_ += "\n 「🔑」Tim TERX-BOTS"
                                 ret_ += "\nCreator:  line.me/ti/p/~gerhanaselatan" 
                                 cl.sendMessage(at, str(ret_))
                         del msg_dict[msg_id]
@@ -664,7 +661,7 @@ def bot(op):
                                 ret_ += "「🔑」➣ ᴘᴇɴɢɪʀɪᴍ : {}".format(str(ryan.displayName))
                                 ret_ += "\n•「🔑」 ɴᴀᴍᴀ ɢʀᴜᴘ : {}".format(str(ginfo.name))
                                 ret_ += "\n•「🔑」 ᴡᴀᴋᴛᴜ ɴɢɪʀɪᴍ : {}".format(dt_to_str(cTime_to_datetime(msg_dict1[msg_id]["createdTime"])))
-                                ret_ += "\n「🔑」 SADIS BOTS"
+                                ret_ += "\n「🔑」 TETX-BOTS"
                                 ret_ += "\nCreator:  line.me/ti/p/~gerhanaselatan" 
                                 ret_ += "{}".format(str(msg_dict1[msg_id]["text"]))
                                 cl.sendMessage(at, str(ret_))
@@ -1188,7 +1185,7 @@ def bot(op):
                                 zx = ""
                                 zxc = ""
                                 zx2 = []
-                                xpesan =  "「 TIM DK-BOT 」\n• User : "
+                                xpesan =  "「 TEAM TERX-BOTS 」\n• User : "
                                 ret_ = "• Group : {}\n".format(str(ginfo.name))
                                 ret_ += str(md)
                                 ry = str(ryan.displayName)
@@ -1204,7 +1201,7 @@ def bot(op):
                                 
                         elif cmd == "creator" or text.lower() == 'creator':
                             if msg._from in admin:
-                                cl.sendText(msg.to,"「CREATOR BOT\nPelindung Room Kita」") 
+                                cl.sendText(msg.to,"「CREATOR BOTS\nline.me/ti/p/~gerhanaselatan」") 
                                 ma = ""
                                 for i in creator:
                                     ma = cl.getContact(i)
@@ -1231,7 +1228,6 @@ def bot(op):
                                 eltime = time.time() - mulai
                                 bot = runtime(eltime)
                                 start = time.time()
-                                #cl.sendText("u6bca85cef34fc8ec0e2b459e179e3708", '.')
                                 elapsed_time = time.time() - start
                                 ryan = cl.getContact(mid)
                                 zx = ""
@@ -1247,7 +1243,7 @@ def bot(op):
                                 ret_ += "\n• 「🔑」ɪɴ ᴅᴀʏs : {} ᴀɢᴀɪɴ".format(days)
                                 ret_ += "\n「 sᴘᴇᴇᴅ ʀᴇsᴘᴏɴ 」\n• ༎  ༓{} ᴅᴇᴛɪᴋ".format(str(elapsed_time))
                                 ret_ += "\n「 sᴇʟғʙᴏᴛ ʀᴜɴᴛɪᴍᴇ 」\n• ༎  ༓{}".format(str(bot))
-                                ret_ += "\nBY: SADIS"
+                                ret_ += "\nBY: TEGUH"
                                 ry = str(ryan.displayName)
                                 pesan = ''
                                 pesan2 = pesan+"@x \n"
@@ -1257,8 +1253,7 @@ def bot(op):
                                 zx2.append(zx)
                                 zxc += pesan2
                                 text = xpesan + zxc + ret_ + ""
-                                cl.sendMessage(to, text, contentMetadata={'MENTION':str('{"MENTIONEES":'+json.dumps(zx2).replace(' ','')+'}')}, contentType=0)
-                                #cl.sendContact(to, "")
+                                cl.sendMessage(to, text, contentMetadata={'MENTION':str('{"MENTIONEES":'+json.dumps(zx2).replace(' ','')+'}')}, contentType=0)                        
                             except Exception as e:
                                 cl.sendMessage(msg.to, str(e))
 
@@ -1343,8 +1338,6 @@ def bot(op):
                                 wait["myProfile"]["displayName"] = str(profile.displayName)
                                 wait["myProfile"]["statusMessage"] = str(profile.statusMessage)
                                 wait["myProfile"]["pictureStatus"] = str(profile.pictureStatus)
-#                                coverId = ririn.getProfileDetail()["result"]["objectId"]
-#                                wait["myProfile"]["coverId"] = str(coverId)
                                 cl.sendMessage(to, "ʙᴀᴄᴋᴜᴘ ᴘʀᴏғɪʟᴇ sᴜᴄᴄᴇs")
                             except Exception as e:
                                 cl.sendMessage(to, "ʙᴀᴄᴋᴜᴘ ᴘʀᴏғɪʟᴇ ғᴀɪʟᴇᴅ")
@@ -1788,11 +1781,11 @@ def bot(op):
                                 cl.updateProfile(profile)
                                 cl.sendMessage(msg.to,"Nama diganti jadi " + string + "")
 #KICKALL
-                        elif "!curut" in msg.text:
+                        elif "!terx" in msg.text:
                           if msg._from in admin:
                            if msg.toType == 2:
                               print("ok")
-                              _name = msg.text.replace("!curut","")
+                              _name = msg.text.replace("!terx","")
                               gs = cl.getGroup(msg.to)
                               gs = cl.getGroup(msg.to)
                               gs = cl.getGroup(msg.to)
@@ -1814,7 +1807,7 @@ def bot(op):
                                           break
 
 #===========BOT UPDATE============#
-                        elif msg.text in ["Cipok","Tagall","Desah","Emuach","Assalamualaikum","Pagi","Siang","Sore","Malam","Nah","All"]:
+                        elif msg.text in ["Cipok","Tagall","Tag","Mek","Assalamualaikum","Pagi","Siang","Sore","Malam","Nah","All"]:
                                if wait["selfbot"] == True:
                                 if msg._from in admin:
                                  group = cl.getGroup(msg.to)
@@ -1887,7 +1880,7 @@ def bot(op):
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                start = time.time()
-                               sendMention(msg.to, sender, "「 Selfbot Speed 」\n• User ", "")
+                               sendMention(msg.to, sender, "「NgaciiiR 」\n• User ", "")
                                elapsed_time = time.time() - start
                                cl.sendMessage(msg.to, "{} detik".format(str(elapsed_time)))
                                 
@@ -3005,11 +2998,11 @@ def bot(op):
                              
                         elif cmd == "promo":
                           if msg._from in admin:
-                             cl.sendMessage(msg.to,"────────────\nOPEN ORDER\n────────┅┅───────\n➣ꜱᴇʟꜰʙᴏᴛ ᴏɴʟʏ\n➣ꜱᴇʟꜰʙᴏᴛ + ᴀꜱɪꜱᴛ\n➣1 ᴀᴋᴜɴ ᴜᴛᴀᴍᴀ\n➣1 ᴀᴋᴜɴ ᴜᴛᴀᴍᴀ + 2 ᴀꜱɪꜱᴛ\n➣1 ᴀᴋᴜɴ ᴜᴛᴀᴍᴀ + 3 ᴀꜱɪꜱᴛ\n➣1 ᴀᴋᴜɴ ᴜᴛᴀᴍᴀ + 4 ᴀꜱɪꜱᴛ\n➣1 ᴀᴋᴜɴ ᴜᴛᴀᴍᴀ + 5 ᴀꜱɪꜱᴛ\n➣ʙᴏᴛᴘʀᴏᴛᴇᴄᴛ 3-11 ʙᴏᴛ ᴀꜱɪꜱᴛ\n➣SCRIP BARU\n─────────┅┅─────────\n  ✯creator✯\nline.me/ti/p/~cyber01\nline.me/ti/p/~gerhanaselatan\n➣ѕєʟғвот κɪcκєʀ_+_ᴘʀᴏᴛᴇᴄᴛ\n────────┅┅────────")
+                             cl.sendMessage(msg.to,"────────────\nOPEN ORDER\n────────┅┅───────\n➣ꜱᴇʟꜰʙᴏᴛ ᴏɴʟʏ\n➣ꜱᴇʟꜰʙᴏᴛ + ᴀꜱɪꜱᴛ\n➣1 ᴀᴋᴜɴ ᴜᴛᴀᴍᴀ\n➣1 ᴀᴋᴜɴ ᴜᴛᴀᴍᴀ + 2 ᴀꜱɪꜱᴛ\n➣1 ᴀᴋᴜɴ ᴜᴛᴀᴍᴀ + 3 ᴀꜱɪꜱᴛ\n➣1 ᴀᴋᴜɴ ᴜᴛᴀᴍᴀ + 4 ᴀꜱɪꜱᴛ\n➣1 ᴀᴋᴜɴ ᴜᴛᴀᴍᴀ + 5 ᴀꜱɪꜱᴛ\n➣ʙᴏᴛᴘʀᴏᴛᴇᴄᴛ 3-11 ʙᴏᴛ ᴀꜱɪꜱᴛ\n➣SCRIP BARU\n─────────┅┅─────────\n  ✯creator✯\nline.me/ti/p/~cyber11\nline.me/ti/p/~gerhanaselatan\n➣ѕєʟғвот κɪcκєʀ_+_ᴘʀᴏᴛᴇᴄᴛ\n────────┅┅────────")
                              msg.contentType = 13
                              msg.contentMetadata = {'mid': admin}
                              tanya = msg.text.replace("promo ","")
-                             jawab = ("──────┅┅──────\nᴼᴾᴱᴺ ᴼᴿᴰᴱᴿ\n────────┅┅───────\n➣ꜱᴇʟꜰʙᴏᴛ ᴏɴʟʏ\n➣ꜱᴇʟꜰʙᴏᴛ + ᴀꜱɪꜱᴛ\n➣1 ᴀᴋᴜɴ ᴜᴛᴀᴍᴀ\n➣1 ᴀᴋᴜɴ ᴜᴛᴀᴍᴀ + 2 ᴀꜱɪꜱᴛ\n➣1 ᴀᴋᴜɴ ᴜᴛᴀᴍᴀ + 3 ᴀꜱɪꜱᴛ\n➣1 ᴀᴋᴜɴ ᴜᴛᴀᴍᴀ + 4 ᴀꜱɪꜱᴛ\n➣1 ᴀᴋᴜɴ ᴜᴛᴀᴍᴀ + 5 ᴀꜱɪꜱᴛ\n➣ʙᴏᴛᴘʀᴏᴛᴇᴄᴛ 3-11 ʙᴏᴛ ᴀꜱɪꜱᴛ\n➣SCRIP BARU\n───creator\n  ✯\nline.me/ti/p/~gerhanaselatan\nline.me/ti/p/~cyber01\n➣ѕєʟғвот κɪcκєʀ_+_ᴘʀᴏᴛᴇᴄᴛ\n────────────────")
+                             jawab = ("──────┅┅──────\nᴼᴾᴱᴺ ᴼᴿᴰᴱᴿ\n────────┅┅───────\n➣ꜱᴇʟꜰʙᴏᴛ ᴏɴʟʏ\n➣ꜱᴇʟꜰʙᴏᴛ + ᴀꜱɪꜱᴛ\n➣1 ᴀᴋᴜɴ ᴜᴛᴀᴍᴀ\n➣1 ᴀᴋᴜɴ ᴜᴛᴀᴍᴀ + 2 ᴀꜱɪꜱᴛ\n➣1 ᴀᴋᴜɴ ᴜᴛᴀᴍᴀ + 3 ᴀꜱɪꜱᴛ\n➣1 ᴀᴋᴜɴ ᴜᴛᴀᴍᴀ + 4 ᴀꜱɪꜱᴛ\n➣1 ᴀᴋᴜɴ ᴜᴛᴀᴍᴀ + 5 ᴀꜱɪꜱᴛ\n➣ʙᴏᴛᴘʀᴏᴛᴇᴄᴛ 3-11 ʙᴏᴛ ᴀꜱɪꜱᴛ\n➣SCRIP BARU\n───creator\n  ✯\nline.me/ti/p/~gerhanaselatan\nline.me/ti/p/~cyber11\n➣ѕєʟғвот κɪcκєʀ_+_ᴘʀᴏᴛᴇᴄᴛ\n────────────────")
                              jawaban = random.choice(jawab)
                              tts = gTTS(text=jawaban, lang='id')
                              tts.save('tts.mp3')
@@ -3023,7 +3016,7 @@ def bot(op):
                                cl.sendContact(to, mid)
                                cl.sendMessage(msg.to, "█░░╦─╦╔╗╦─╔╗╔╗╔╦╗╔╗░░█\n█░░║║║╠─║─║─║║║║║╠─░░█\n█░░╚╩╝╚╝╚╝╚╝╚╝╩─╩╚╝░░█\n"
  "ASSALAMUALAIKUM\n"
-"  ╭━SADIS BOTS KILER\n"
+"  ╭━TERX BOTS KILER\n"
 "  ╰╮┏━┳┳┓┏┳┳┓┏┳┳┳┓\n"
 "  ┏┻╋━┻┻┫┣┻┻┫┣┻┻┻┫\n"
 "  ┃HAI▪┃KAMI DTANG LGI┃\n"
@@ -3080,7 +3073,7 @@ def bot(op):
 ">>>BYE...BYE JANGAN NANGIS>><\nLO DENDAM CARI KAMI\n<<<<<<<<<>>\nhttp://line.me/ti/p/~gerhanaselatan\nhttp://line.me/ti/p/~cyber01")
                                cl.sendMessage(msg.to, None, contentMetadata={"STKID":"15996978","STKPKGID":"1416471","STKVER":"1"}, contentType=7)
 
-                        elif cmd == "sd.bot" or cmd == "sdbot":
+                        elif cmd == "tetxbot" or cmd == "trbot":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                start = time.time()
